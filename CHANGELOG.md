@@ -7,15 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.1]
+
 ### Added
 
 - Palette interface and PaletteRGB abstract class. [#3](https://github.com/dartoos-dev/eo_color/issues/3)
 - Swatch interface and SwatchBase abstract class. [#14](https://github.com/dartoos-dev/eo_color/issues/14)
-
-## [0.0.1]
-
-```dart
-/*
- * @todo #2 needs to release first version.
-/*
-```
