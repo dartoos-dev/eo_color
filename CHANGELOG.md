@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added [#3](https://github.com/dartoos-dev/eo_color/issues/3)
+
+- Palette interface and PaletteRGB abstract class.
+
 ## [0.0.1]
 
 ```dart
