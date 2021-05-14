@@ -1,2 +1,2 @@
-export 'src/palette.dart';
-export 'src/palette_rgb.dart';
+export 'palettes.dart';
+export 'swatches.dart';
