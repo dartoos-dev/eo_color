@@ -120,21 +120,13 @@ class RectGradient extends StatelessWidget {
 }
 ```
 
-### Supported Material Design color palettes
+### Material Design color palettes
 
-```dart
-/**
- * @todo #2 nothing to be placed here; there is no palette implementation yet.
-*/
-```
+- BlueGrey, Brown, Grey.
 
-### Supported  Material Design color swatches
+### Material Design color swatches
 
-```dart
-/**
- * @todo #2 nothing to be placed here; there is no swatch implementation yet.
-*/
-```
+- BlueGreys, Browns, Greys.
 
 See also: [material design color
 palette](https://material.io/archive/guidelines/style/color.html#color-color-palette).
