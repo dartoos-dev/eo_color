@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Color Palettes: BlueGrey, Brown, Grey.
 - Color Swatches: BlueGreys, Browns, Greys.
 
+### Changed [#19](https://github.com/dartoos-dev/eo_color/issues/19)
+- less verbose and more elegant README file.
+
 ## [0.0.1] - 2021-05-14
 ### Added
 - Palette interface and PaletteRGB abstract class. [#3](https://github.com/dartoos-dev/eo_color/issues/3)
