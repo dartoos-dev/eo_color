@@ -82,12 +82,13 @@ import 'package:flutter/material.dart';
 
 /// Rectangle filled with a gradient of ten shades of a Material Design color.
 class RectGradient extends StatelessWidget {
-
   /// Rectangle filled with the given color swatch.
-  const RectGrandient(this._swatch);
+  const RectGradient(Swatch swatch, {Key? key})
+      : _swatch = swatch,
+        super(key: key);
 
   /// Rectangle filled with ten shades of grey.
-  const RectGrandient.grey() : this(Greys());
+  const RectGradient.grey({Key? key}) : this(const Greys(), key: key);
 
   // Material Design color swatch.
   final Swatch _swatch;
@@ -98,9 +99,9 @@ class RectGradient extends StatelessWidget {
       height: kToolbarHeight / 2,
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          begin: Alignment.topRight,
           end: Alignment.bottomLeft,
-          colors: _swatch.colors.toList(growable:false),
+          begin: Alignment.topRight,
+          colors: _swatch.colors.toList(growable: false),
         ),
       ),
     );
