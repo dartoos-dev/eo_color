@@ -1,4 +1,4 @@
-# Dartoos EO Color Package
+## EO Color Package
 
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![DevOps By Rultor.com](https://www.rultor.com/b/dartoos-dev/eo_color)](https://www.rultor.com/p/dartoos-dev/eo_color)
@@ -12,55 +12,46 @@
 [![Hits-of-Code](https://hitsofcode.com/github/dartoos-dev/eo_color?branch=master)](https://hitsofcode.com/github/dartoos-dev/eo_color/view?branch=master)
 
 Stop wondering whether an obscure command like `Grey.colors[200]` represents a
-light, medium or dark shade of grey. Spoiler: it is a light shade of grey.
-Moreover, what does that '200' mean? Could it be, say, 330 or 777?  Wouldn't it
-be better if you could just write `Grey.light()` to **declare** that you want a
-light shade of grey?
+light, medium or dark shade of grey. Moreover, what does that `200` mean and why
+not, say, `330` or `777`?
 
-This is a fully tested (100% test coverage), elegant and object-oriented package
-to be used as an alternative to the Flutter's built-in color package. It
-significantly improves the readability and maintainability of your source code
-by providing:
+This is an **E**legant and **O**bject-oriented implementation of the [Material
+Design](https://material.io/design/color/) color palettes and an alternative to
+the Flutter's built-in colors. It significantly improves the readability and
+maintainability of the source code by providing a declarative interface.
 
-- a collection of color-related classes and interfaces that are declarative;
-- an object-oriented implementation of the [Material
-  Design](https://material.io/design/color/) color palettes and swatches.
+To get a light shade of grey, you just have to **declare** `Grey.light()` in the
+source code. It sounds like an English sentence rather than a command! A
+consequence of being declarative.
 
-In addition, this package can be used as a base framework for other color
-related packages.
-
-## Getting Started
+### Getting Started
 
 Like any object-oriented package, this one makes extensive use of interfaces for
 defining concepts, such as color palettes, color swatches, gradients, etc.
 
-### Core Interfaces
-
-Currently there are two core interfaces:
+There are two core interfaces:
 
 - **Palette**: represents a color palette from which a color can be picked. Its
-  single property "color" retrieves the picked color. Typically, the color
+  single property `color` retrieves the picked color. Typically, the color
   selection takes place when a Palette subclass is instantiated. For instance,
   `Grey.light().color` retrieves a light shade of grey; `Blue.dark().color`, a
   dark shade of blue; `Red().color`, the primary red shade; and so on.
 
 - **Swatch**: a color swatch is a collection of related colors, such as the
-  colors of the rainbow, shades of grey, the colors of the gradient of a logo,
-  etc. Its single property "colors" retrieves several colors at once as an
-  `Iterable<Color>`. For instance, `Greys().colors` retrieves ten shades of grey
-  as defined by the Material Design standard.
+  colors of the rainbow, shades of grey, etc. Its single property `colors`
+  retrieves several colors at once as an `Iterable<Color>`. For instance,
+  `Greys().colors` retrieves ten shades of grey, as defined by the Material
+  Design standard.
 
 For more details: [api
 reference](https://pub.dev/documentation/eo_color/latest/eo_color/eo_color-library.html).
 
 ### Color Palette Classes
 
-They are any class whose name matches with the color it represents, such as
-"Grey". For example, `Grey()` represents the primary grey color, equivalent to
-the Flutter's cryptic `Colors.grey.shade500`; `Grey.light()` ≡
-`Colors.grey.shade200`; `Grey.veryDark()` ≡ `Colors.grey.shade900`; and so on.
-
-#### Color palette in action
+These are classes whose name is the color they represent, such as "Grey". For
+example: `Grey()` represents the primary grey color, equivalent to the Flutter's
+cryptic `Colors.grey.shade500`; `Grey.light()` ≡ `Colors.grey.shade200`;
+`Grey.veryDark()` ≡ `Colors.grey.shade900`; and so on.
 
 ```dart
 import 'package:eo_color/palettes.dart';
@@ -81,12 +72,9 @@ class Greyish extends StatelessWidget {
 
 ### Color Swatch Classes
 
-Any class whose name matches with the plural of a color and represents some
-shades thereof. For instance, the "Greys" class is a swatch color of ten shades
-of grey. Therefore, the command `Greys().colors` retrieves an `Iterable<Color>`
-containing ten shades of grey; the greater the index, the darker the color.
-
-#### Swatch in action
+These are classes whose name is the plural of a color, such as "Greys". For
+example: `Greys().colors` retrieves an `Iterable<Color>` containing ten shades
+of grey; the greater the index, the darker the color.
 
 ```dart
 import 'package:eo_color/swatches.dart';
@@ -120,11 +108,11 @@ class RectGradient extends StatelessWidget {
 }
 ```
 
-### Material Design color palettes
+#### Supported color palettes
 
 - BlueGrey, Brown, Grey.
 
-### Material Design color swatches
+#### Supported color swatches
 
 - BlueGreys, Browns, Greys.
 
