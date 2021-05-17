@@ -109,7 +109,7 @@ class RectGradient extends StatelessWidget {
 }
 ```
 
-### Running Demo Showcase application
+### Running demo showcase application
 
 From the root directory of this project, enter:
 
