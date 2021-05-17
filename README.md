@@ -1,4 +1,10 @@
-## EO Color Package
+# eo-color
+
+<img
+src="https://user-images.githubusercontent.com/24878574/118523677-bdb5c500-b713-11eb-942f-26a7e0b4554e.png"
+alt="EO-Color logo" width="112" height="96"/>
+
+<br/>
 
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![DevOps By Rultor.com](https://www.rultor.com/b/dartoos-dev/eo_color)](https://www.rultor.com/p/dartoos-dev/eo_color)
@@ -24,7 +30,7 @@ To get a light shade of grey, you just have to **declare** `Grey.light()` in the
 source code. It sounds like an English sentence rather than a command! A
 consequence of being declarative.
 
-### Getting Started
+## Getting Started
 
 Like any object-oriented package, this one makes extensive use of interfaces for
 defining concepts, such as color palettes, color swatches, gradients, etc.
