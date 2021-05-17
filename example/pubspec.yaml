@@ -1,0 +1,23 @@
+name: eo_color_example
+description: How to use EO Color package effectively.
+
+publish_to: 'none'
+
+version: 1.0.0
+homepage: https://dartoos.dev
+repository: https://github.com/dartoos-dev/eo_color
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  eo_color:
+    # will always depend on the cutting-edge version of the package.
+    path: ../
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^1.5.3
