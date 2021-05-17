@@ -109,6 +109,20 @@ class RectGradient extends StatelessWidget {
 }
 ```
 
+### Running Demo Showcase application
+
+From the root directory of this project, enter:
+
+```shell
+cd example/
+flutter run -d chrome
+
+```
+
+This should start the color palettes showcase on Chrome browser.
+
+![EO-Color-Showcase](https://user-images.githubusercontent.com/24878574/118488319-fe9ce200-b6f1-11eb-9b1f-ba0c4e8fe86a.png)
+
 #### Supported color palettes
 
 - BlueGrey, Brown, Grey.

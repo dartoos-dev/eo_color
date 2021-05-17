@@ -1,12 +1,12 @@
 import 'package:eo_color/eo_color.dart';
 
-/// Contrast color according to the background color
+/// Suitable constrast color according to the background.
 class Contrast extends SwatchBase {
   /// light: [0..5]; dark: [6..9].
   const Contrast.forGrey()
       : super(const [
           _dark, // 50
-          _dark, // 100.
+          _dark, // 100
           _dark, // 200
           _dark, // 300
           _dark, // 400
@@ -24,7 +24,7 @@ class Contrast extends SwatchBase {
   const Contrast.forBrown()
       : super(const [
           _dark, // 50
-          _dark, // 100.
+          _dark, // 100
           _dark, // 200
           _dark, // 300
           _light, // 400

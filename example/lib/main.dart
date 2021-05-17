@@ -13,8 +13,8 @@ class ExampleApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'EO Color Demo',
-      home: Showcase(title: 'EO Color Showcase'),
+      title: 'EO Color Showcase',
+      home: Showcase(title: 'Material Design Color Palettes'),
     );
   }
 }
@@ -34,7 +34,6 @@ class Showcase extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         elevation: 0.0,
         backgroundColor: _barBg.color,
         title: Text(
@@ -128,7 +127,7 @@ class ColorTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final style = TextStyle(color: _fontColor, fontWeight: FontWeight.bold);
+    final style = TextStyle(color: _fontColor, fontWeight: FontWeight.w500);
     return ListTile(
       tileColor: _bgColor,
       leading: Text(_label, style: style),
