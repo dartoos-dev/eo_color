@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.3] - 2021-05-17
 ### Added [#21](https://github.com/dartoos-dev/eo_color/issues/21)
-- Showcase application of the Material Design color palettes as example.
+- Showcase application of the Material Design color palettes as an example.
 
 ## [0.0.2] - 2021-05-15
 ### Added [#16](https://github.com/dartoos-dev/eo_color/issues/16)
