@@ -1,6 +1,6 @@
 name: eo_color
 description: An elegant, object-oriented implementation of the Material Design color palettes and swatches; an alternative to the Flutter's built-in colors.
-version: 0.0.3
+version: 0.0.4
 homepage: https://dartoos.dev
 repository: https://github.com/dartoos-dev/eo_color
 
