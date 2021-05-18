@@ -125,21 +125,19 @@ This should start the color palettes showcase in Chrome.
 
 ![EO-Color-Showcase](https://user-images.githubusercontent.com/24878574/118488319-fe9ce200-b6f1-11eb-9b1f-ba0c4e8fe86a.png)
 
-#### Supported color palettes
+### Color palette classes
 
-```dart
-Blue, BlueAccent, LightBlue, LighBlueAccent, Cyan, CyanAccent, Indigo,
-IndigoAccent.
-BlueGrey, Brown, Grey.
-```
+- Blue, BlueAccent; LightBlue, LighBlueAccent; Cyan, CyanAccent; Indigo,
+  IndigoAccent.
+- Purple, PurpleAccent; DeepPurple, DeepPurpleAccent.
+- BlueGrey, Brown, Grey.
 
-#### Supported color swatches
+### Color swatch classes
 
-```dart
-Blues, BlueAccents, LightBlues, LighBlueAccents, Cyans, CyanAccents, Indigos,
-IndigoAccents.
-BlueGreys, Browns, Greys.
-```
+- Blues, BlueAccents; LightBlues, LighBlueAccents; Cyans, CyanAccents; Indigos,
+  IndigoAccents.
+- Purples, PurpleAccents; DeepPurples, DeepPurpleAccents.
+- BlueGreys, Browns, Greys.
 
 See also: [material design color
 palette](https://material.io/archive/guidelines/style/color.html#color-color-palette).
