@@ -7,7 +7,8 @@ import 'accent_swatch_tester.dart';
 void main() {
   group('Light Blue Accent Swatch', () {
     test('Default 4 shades', () {
-      const AccentSwatchTester(LightBlueAccents(), AccentShades.ofBlue()).run();
+      const AccentSwatchTester(LightBlueAccents(), AccentShades.ofLightBlue())
+          .run();
     });
   });
 }
