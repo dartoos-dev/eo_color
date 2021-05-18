@@ -125,17 +125,25 @@ flutter run -d chrome
 
 ```
 
-This should start the color palettes showcase on Chrome browser.
+This should start the color palettes showcase in Chrome.
 
 ![EO-Color-Showcase](https://user-images.githubusercontent.com/24878574/118488319-fe9ce200-b6f1-11eb-9b1f-ba0c4e8fe86a.png)
 
 #### Supported color palettes
 
-- BlueGrey, Brown, Grey.
+```dart
+Blue, BlueAccent, LightBlue, LighBlueAccent, Cyan, CyanAccent, Indigo,
+IndigoAccent.
+BlueGrey, Brown, Grey.
+```
 
 #### Supported color swatches
 
-- BlueGreys, Browns, Greys.
+```dart
+Blues, BlueAccents, LightBlues, LighBlueAccents, Cyans, CyanAccents, Indigos,
+IndigoAccents.
+BlueGreys, Browns, Greys.
+```
 
 See also: [material design color
 palette](https://material.io/archive/guidelines/style/color.html#color-color-palette).
