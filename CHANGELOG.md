@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Purplish palettes and swatches - [#38](https://github.com/dartoos-dev/eo_color/issues/38).
+  - **Palettes:** Purple, PurpleAccent; DeepPurple, DeepPurpleAccent.
+  - **Swatches:** Purples, PurpleAccents; DeepPurples, DeepPurpleAccents.
+
 ## [0.0.5] - 2021-05-18
 ### Fixed
 - "cleaner" README file - [#36](https://github.com/dartoos-dev/eo_color/issues/36).
@@ -14,10 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.4] - 2021-05-18
 ### Added
 - Partial implementation of the Primaries swatch - [#24](https://github.com/dartoos-dev/eo_color/issues/24).
-- Bluish color palettes and swatches - [#29](https://github.com/dartoos-dev/eo_color/issues/29).
-  - **Palettes:** Blue, BlueAccent, LightBlue, LighBlueAccent, Cyan, CyanAccent, Indigo,
+- Bluish palettes and swatches - [#29](https://github.com/dartoos-dev/eo_color/issues/29).
+  - **Palettes:** Blue, BlueAccent; LightBlue, LighBlueAccent; Cyan, CyanAccent; Indigo,
     IndigoAccent.
-  - **Swatches:** Blues, BlueAccents, LightBlues, LightBlueAccents, Cyans, CyanAccents,
+  - **Swatches:** Blues, BlueAccents; LightBlues, LightBlueAccents; Cyans, CyanAccents;
     Indigos, IndigoAccents.
 
 ### Changed
