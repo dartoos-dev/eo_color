@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Palettes:** Purple, PurpleAccent; DeepPurple, DeepPurpleAccent.
   - **Swatches:** Purples, PurpleAccents; DeepPurples, DeepPurpleAccents.
 
+### Changed
+- Reorganization of the README file structure - [#40](https://github.com/dartoos-dev/eo_color/issues/40).
+
 ## [0.0.5] - 2021-05-18
 ### Fixed
 - "cleaner" README file - [#36](https://github.com/dartoos-dev/eo_color/issues/36).
