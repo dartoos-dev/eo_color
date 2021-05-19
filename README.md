@@ -13,47 +13,38 @@ alt="EO-Color logo" width="112" height="96"/>
 [![codecov](https://codecov.io/gh/dartoos-dev/eo_color/branch/master/graph/badge.svg)](https://codecov.io/gh/dartoos-dev/eo_color)
 [![Hits-of-Code](https://hitsofcode.com/github/dartoos-dev/eo_color?branch=master)](https://hitsofcode.com/github/dartoos-dev/eo_color/view?branch=master)
 
-Stop wondering whether an obscure command like `Grey.colors[200]` represents a
-light, medium or dark shade of grey. Moreover, what does that `200` mean and why
-not, say, `330` or `777`?
+**EO-Color** is an **E**legant and **O**bject-oriented implementation of the
+Material Design color palettes. It is aimed to be an alternative to the
+Flutter's built-in colors, as well as a base framework for other color related
+packages.
 
-This is an **E**legant and **O**bject-oriented implementation of the [Material
-Design](https://material.io/design/color/) color palettes and an alternative to
-the Flutter's built-in colors. It significantly improves the readability and
-maintainability of the source code by providing a declarative interface.
-
-To get a light shade of grey, you just have to **declare** `Grey.light()` in the
-source code. It sounds like an English sentence rather than a command! A
-consequence of being declarative.
+A key benefit of **EO-Color** is to improve the source code readability and
+maintainability by providing a declarative approach. For instance, if you wish
+to get a light shade of grey, you just have to declare it like `Grey.light()` in
+the source code. It sounds more like an English sentence than a command. Welcome
+to declarative programming!
 
 ## Getting Started
 
-Like any object-oriented package, this one makes extensive use of interfaces for
-defining concepts, such as color palettes, color swatches, gradients, etc.
+Like any object-oriented package, this one utilizes interfaces to define
+concepts such as color palettes and swatches. Therefore, it is no surprise that
+the two core interfaces are `Palette` and `Swatch`.
 
-There are two core interfaces:
+### Palette interface
 
-- **Palette**: represents a color palette from which a color can be picked. Its
-  single property `color` retrieves the picked color. Typically, the color
-  selection takes place when a Palette subclass is instantiated. For instance,
-  `Grey.light().color` retrieves a light shade of grey; `Blue.dark().color`, a
-  dark shade of blue; `Red().color`, the primary red shade; and so on.
+It represents color palettes from which a color can be selected. Typically, the
+"Palette" subclasses provide named constructors by which a color is selected. On
+the other hand, the actual color object initialization is deferred until the
+`color` property gets called - Lazy loading.
 
-- **Swatch**: a color swatch is a collection of related colors, such as the
-  colors of the rainbow, shades of grey, etc. Its single property `colors`
-  retrieves several colors at once as an `Iterable<Color>`. For instance,
-  `Greys().colors` retrieves ten shades of grey, as defined by the Material
-  Design standard.
-
-For more details: [api
-reference](https://pub.dev/documentation/eo_color/latest/eo_color/eo_color-library.html).
-
-### Color Palette Classes
+#### Material Design palette classes
 
 These are classes whose name is the color they represent, such as "Grey". For
 example: `Grey()` represents the primary grey color, equivalent to the Flutter's
 cryptic `Colors.grey.shade500`; `Grey.light()` ≡ `Colors.grey.shade200`;
 `Grey.veryDark()` ≡ `Colors.grey.shade900`; and so on.
+
+#### Palettes in action
 
 ```dart
 import 'package:eo_color/palettes.dart';
@@ -72,11 +63,40 @@ class Greyish extends StatelessWidget {
 }
 ```
 
-### Color Swatch Classes
+<!-- #### Indexes by constructors of the normal and accent color classes -->
+#### Indexes by named constructors
+
+| Index | Normal     | Accent |
+|:------| ---------- |:-------|
+|  50   | ultraLight |        |
+| 100   | veryLight  | light  |
+| 200   | light      | ()     |
+| 300   | lighter    |        |
+| 400   | bitLight   | darker |
+| 500   | ()         |        |
+| 600   | bitDarker  |        |
+| 700   | darker     | dark   |
+| 800   | dark       |        |
+| 900   | veryDark   |        |
+
+#### Supported palette colors
+
+- [palettes](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
+
+### Swatch interface
+
+A color swatch is a collection of related colors such as the colors of the
+rainbow, shades of grey, etc. Its single property `colors` retrieves several
+colors at once as an `Iterable<Color>`. For instance, `Greys().colors` retrieves
+ten shades of grey, as defined by the Material Design standard.
+
+#### Color Swatch Classes
 
 These are classes whose name is the plural of a color, such as "Greys". For
 example: `Greys().colors` retrieves an `Iterable<Color>` containing ten shades
 of grey; the greater the index, the darker the color.
+
+#### Swatch in action
 
 ```dart
 import 'package:eo_color/swatches.dart';
@@ -111,9 +131,13 @@ class RectGradient extends StatelessWidget {
 }
 ```
 
-### Running demo showcase application
+#### Supported color swatches
 
-From the root directory of this project, enter:
+- [swatches](https://pub.dev/documentation/eo_color/latest/swatches/swatches-library.html)
+
+### Showcase application
+
+To run the showcase application:
 
 ```shell
 cd example/
@@ -125,19 +149,6 @@ This should start the color palettes showcase in Chrome.
 
 ![EO-Color-Showcase](https://user-images.githubusercontent.com/24878574/118488319-fe9ce200-b6f1-11eb-9b1f-ba0c4e8fe86a.png)
 
-### Color palette classes
+### References
 
-- Blue, BlueAccent; LightBlue, LighBlueAccent; Cyan, CyanAccent; Indigo,
-  IndigoAccent.
-- Purple, PurpleAccent; DeepPurple, DeepPurpleAccent.
-- BlueGrey, Brown, Grey.
-
-### Color swatch classes
-
-- Blues, BlueAccents; LightBlues, LighBlueAccents; Cyans, CyanAccents; Indigos,
-  IndigoAccents.
-- Purples, PurpleAccents; DeepPurples, DeepPurpleAccents.
-- BlueGreys, Browns, Greys.
-
-See also: [material design color
-palette](https://material.io/archive/guidelines/style/color.html#color-color-palette).
+- [material design color palette](https://material.io/archive/guidelines/style/color.html#color-color-palette).
