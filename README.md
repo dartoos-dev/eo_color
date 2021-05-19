@@ -14,15 +14,14 @@ alt="EO-Color logo" width="112" height="96"/>
 [![Hits-of-Code](https://hitsofcode.com/github/dartoos-dev/eo_color?branch=master)](https://hitsofcode.com/github/dartoos-dev/eo_color/view?branch=master)
 
 **EO-Color** is an **E**legant and **O**bject-oriented implementation of the
-Material Design color palettes. It is aimed to be an alternative to the
-Flutter's built-in colors, as well as a base framework for other color related
-packages.
+Material Design color palettes. It is intended to be used as:
+
+- an alternative to the Flutter's built-in colors
+- a base framework for more specific color packages
 
 A key benefit of **EO-Color** is to improve the source code readability and
-maintainability by providing a declarative approach. For instance, if you wish
-to get a light shade of grey, you just have to declare it like `Grey.light()` in
-the source code. It sounds more like an English sentence than a command. Welcome
-to declarative programming!
+maintainability by providing a declarative interface. For example, to get a
+light shade of grey, you just have to **declare** `Grey.light()`.
 
 ## Getting Started
 
@@ -32,10 +31,9 @@ the two core interfaces are `Palette` and `Swatch`.
 
 ### Palette interface
 
-It represents color palettes from which a color can be selected. Typically, the
-"Palette" subclasses provide named constructors by which a color is selected. On
-the other hand, the actual color object initialization is deferred until the
-`color` property gets called - Lazy loading.
+It represents color palettes from which a color can be picked. Very often,
+classes provide named constructors in which the desired color is selected to be
+retrieved afterwards - via the `color` property.
 
 #### Material Design palette classes
 
@@ -72,7 +70,7 @@ class Greyish extends StatelessWidget {
 | 100   | veryLight  | light  |
 | 200   | light      | ()     |
 | 300   | lighter    |        |
-| 400   | bitLight   | darker |
+| 400   | bitLighter | darker |
 | 500   | ()         |        |
 | 600   | bitDarker  |        |
 | 700   | darker     | dark   |

@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Palettes:** Orange, OrangeAccent; DeepOrange, DeepOrangeAccent.
   - **Swatches:** Oranges, OrangeAccents; DeepOranges, DeepOrangeAccents.
 
+### Fixed
+- README typos - [#45](https://github.com/dartoos-dev/eo_color/issues/45).
+
 ## [0.0.6] - 2021-05-19
 
 ### Added
