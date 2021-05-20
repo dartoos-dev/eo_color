@@ -1,5 +1,7 @@
 /// The color swatches.
 
+export 'src/material/amber/amber_accents.dart';
+export 'src/material/amber/ambers.dart';
 export 'src/material/blue/blue_accents.dart';
 export 'src/material/blue/blues.dart';
 export 'src/material/blue_grey/blue_greys.dart';
@@ -15,10 +17,14 @@ export 'src/material/indigo/indigo_accents.dart';
 export 'src/material/indigo/indigos.dart';
 export 'src/material/light_blue/light_blue_accents.dart';
 export 'src/material/light_blue/light_blues.dart';
+export 'src/material/lime/lime_accents.dart';
+export 'src/material/lime/limes.dart';
 export 'src/material/orange/orange_accents.dart';
 export 'src/material/orange/oranges.dart';
 export 'src/material/primaries.dart';
 export 'src/material/purple/purple_accents.dart';
 export 'src/material/purple/purples.dart';
+export 'src/material/yellow/yellow_accents.dart';
+export 'src/material/yellow/yellows.dart';
 export 'src/swatch.dart';
 export 'src/swatch_base.dart';
