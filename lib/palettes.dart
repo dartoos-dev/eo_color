@@ -1,5 +1,7 @@
 /// The color palettes.
 
+export 'src/material/amber/amber.dart';
+export 'src/material/amber/amber_accent.dart';
 export 'src/material/blue/blue.dart';
 export 'src/material/blue/blue_accent.dart';
 export 'src/material/blue_grey/blue_grey.dart';
@@ -16,9 +18,13 @@ export 'src/material/indigo/indigo.dart';
 export 'src/material/indigo/indigo_accent.dart';
 export 'src/material/light_blue/light_blue.dart';
 export 'src/material/light_blue/light_blue_accent.dart';
+export 'src/material/lime/lime.dart';
+export 'src/material/lime/lime_accent.dart';
 export 'src/material/orange/orange.dart';
 export 'src/material/orange/orange_accent.dart';
 export 'src/material/purple/purple.dart';
 export 'src/material/purple/purple_accent.dart';
+export 'src/material/yellow/yellow.dart';
+export 'src/material/yellow/yellow_accent.dart';
 export 'src/palette.dart';
 export 'src/palette_rgb.dart';
