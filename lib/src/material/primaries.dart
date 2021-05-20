@@ -1,5 +1,5 @@
-import '../../palettes.dart';
-import '../swatch_base.dart';
+import 'package:eo_color/palettes.dart';
+import 'package:eo_color/swatches.dart';
 
 /// Material Design primary colors, excluding grey.
 ///
