@@ -8,8 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Green palettes and swatches - [#53](https://github.com/dartoos-dev/eo_color/issues/53)
-  - **Palettes:** Green, GreenAccent.
-  - **Swatches:** Greens, GreenAccents.
+  - **Palettes:** Green, GreenAccent; LightGreen, LightGreenAccent.
+  - **Swatches:** Greens, GreenAccents, LightGreens, LightGreenAccents.
 
 ## [0.0.8] - 2021-05-20
 ### Added

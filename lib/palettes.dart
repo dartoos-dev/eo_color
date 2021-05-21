@@ -20,6 +20,8 @@ export 'src/material/indigo/indigo.dart';
 export 'src/material/indigo/indigo_accent.dart';
 export 'src/material/light_blue/light_blue.dart';
 export 'src/material/light_blue/light_blue_accent.dart';
+export 'src/material/light_green/light_green.dart';
+export 'src/material/light_green/light_green_accent.dart';
 export 'src/material/lime/lime.dart';
 export 'src/material/lime/lime_accent.dart';
 export 'src/material/orange/orange.dart';

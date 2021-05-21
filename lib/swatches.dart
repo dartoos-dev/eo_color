@@ -19,6 +19,8 @@ export 'src/material/indigo/indigo_accents.dart';
 export 'src/material/indigo/indigos.dart';
 export 'src/material/light_blue/light_blue_accents.dart';
 export 'src/material/light_blue/light_blues.dart';
+export 'src/material/light_green/light_green_accents.dart';
+export 'src/material/light_green/light_greens.dart';
 export 'src/material/lime/lime_accents.dart';
 export 'src/material/lime/limes.dart';
 export 'src/material/orange/orange_accents.dart';
