@@ -7,7 +7,7 @@ import 'lime.dart';
 /// See also
 /// - [lime](https://api.flutter.dev/flutter/material/Colors/lime-constant.html)
 class Limes extends SwatchBase {
-  /// Ten shades of lime; the greater the index, the darker the color.
+  /// Ten shades of lime; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

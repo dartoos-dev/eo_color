@@ -7,7 +7,7 @@ import 'green.dart';
 /// See also
 /// - [green](https://api.flutter.dev/flutter/material/Colors/green-constant.html)
 class Greens extends SwatchBase {
-  /// Ten shades of green; the greater the index, the darker the color.
+  /// Ten shades of green; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

@@ -7,7 +7,7 @@ import 'deep_orange_accent.dart';
 /// See also
 /// - [deep orange accent](https://api.flutter.dev/flutter/material/Colors/deep orangeAccent-constant.html)
 class DeepOrangeAccents extends SwatchBase {
-  /// Four shades of deep orange accent; the greater the index, the darker the color.
+  /// Four shades of deep orange accent; the higher the index, the darker the color.
   ///
   /// There are 4 valid indexes
   /// - 0, light ≡ 100

@@ -7,7 +7,7 @@ import 'yellow.dart';
 /// See also
 /// - [yellow](https://api.flutter.dev/flutter/material/Colors/yellow-constant.html)
 class Yellows extends SwatchBase {
-  /// Ten shades of yellow; the greater the index, the darker the color.
+  /// Ten shades of yellow; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

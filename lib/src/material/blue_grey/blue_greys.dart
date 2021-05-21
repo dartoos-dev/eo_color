@@ -7,7 +7,7 @@ import 'blue_grey.dart';
 /// See also
 /// - [blue-grey](https://api.flutter.dev/flutter/material/Colors/blueGrey-constant.html)
 class BlueGreys extends SwatchBase {
-  /// Ten shades of blue-grey; the greater the index, the darker the color.
+  /// Ten shades of blue-grey; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

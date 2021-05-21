@@ -7,7 +7,7 @@ import 'teal.dart';
 /// See also
 /// - [teal](https://api.flutter.dev/flutter/material/Colors/teal-constant.html)
 class Teals extends SwatchBase {
-  /// Ten shades of teal; the greater the index, the darker the color.
+  /// Ten shades of teal; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

@@ -7,7 +7,7 @@ import 'brown.dart';
 /// See also
 /// - [brown](https://api.flutter.dev/flutter/material/Colors/brown-constant.html)
 class Browns extends SwatchBase {
-  /// Ten shades of brown; the greater the index, the darker the color.
+  /// Ten shades of brown; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

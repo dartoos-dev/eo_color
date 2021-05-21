@@ -7,7 +7,7 @@ import 'deep_purple.dart';
 /// See also
 /// - [deep purple](https://api.flutter.dev/flutter/material/Colors/deepPurple-constant.html)
 class DeepPurples extends SwatchBase {
-  /// Ten shades of deep purple; the greater the index, the darker the color.
+  /// Ten shades of deep purple; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

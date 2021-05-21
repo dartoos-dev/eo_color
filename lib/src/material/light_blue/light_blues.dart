@@ -7,7 +7,7 @@ import 'light_blue.dart';
 /// See also
 /// - [lightBlue](https://api.flutter.dev/flutter/material/Colors/lightBlue-constant.html)
 class LightBlues extends SwatchBase {
-  /// Ten shades of light blue; the greater the index, the darker the color.
+  /// Ten shades of light blue; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50
