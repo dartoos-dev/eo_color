@@ -6,7 +6,7 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   group('LightGreen Accent Palette', () {
     test('default', () {
-      expect(const LightGreenAccent().color, Colors.lightGreen.shade200);
+      expect(const LightGreenAccent().color, Colors.lightGreenAccent.shade200);
     });
     test('light', () {
       expect(const LightGreenAccent.light().color,
