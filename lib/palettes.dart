@@ -28,6 +28,8 @@ export 'src/material/orange/orange.dart';
 export 'src/material/orange/orange_accent.dart';
 export 'src/material/purple/purple.dart';
 export 'src/material/purple/purple_accent.dart';
+export 'src/material/teal/teal.dart';
+export 'src/material/teal/teal_accent.dart';
 export 'src/material/yellow/yellow.dart';
 export 'src/material/yellow/yellow_accent.dart';
 export 'src/palette.dart';
