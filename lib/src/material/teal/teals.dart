@@ -21,6 +21,7 @@ class Teals extends SwatchBase {
   /// - 8, dark ≡ 800
   /// - 9, very dark ≡ 900
   const Teals()
+      // coverage:ignore-start
       : super(
           const [
             Teal.ultraLight(),
@@ -35,4 +36,5 @@ class Teals extends SwatchBase {
             Teal.veryDark(),
           ],
         );
+  // coverage:ignore-end
 }

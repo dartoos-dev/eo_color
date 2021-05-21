@@ -15,6 +15,7 @@ class TealAccents extends SwatchBase {
   /// - 2, darker ≡ 400
   /// - 3, dark ≡ 700
   const TealAccents()
+      // coverage:ignore-start
       : super(
           const [
             TealAccent.light(),
@@ -23,4 +24,5 @@ class TealAccents extends SwatchBase {
             TealAccent.dark(),
           ],
         );
+  // coverage:ignore-end
 }
