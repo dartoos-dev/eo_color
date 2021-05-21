@@ -92,7 +92,7 @@ ten shades of grey, as defined by the Material Design standard.
 
 These are classes whose name is the plural of a color, such as "Greys". For
 example: `Greys().colors` retrieves an `Iterable<Color>` containing ten shades
-of grey; the greater the index, the darker the color.
+of grey; the higher the index, the darker the color.
 
 #### Swatch in action
 

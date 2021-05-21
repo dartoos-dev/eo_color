@@ -7,7 +7,7 @@ import 'grey.dart';
 /// See also
 /// - [grey](https://api.flutter.dev/flutter/material/Colors/grey-constant.html)
 class Greys extends SwatchBase {
-  /// Ten shades of grey; the greater the index, the darker the color.
+  /// Ten shades of grey; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

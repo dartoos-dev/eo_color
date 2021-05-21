@@ -7,7 +7,7 @@ import 'purple_accent.dart';
 /// See also
 /// - [purple accent](https://api.flutter.dev/flutter/material/Colors/purpleAccent-constant.html)
 class PurpleAccents extends SwatchBase {
-  /// Four shades of purple accent; the greater the index, the darker the color.
+  /// Four shades of purple accent; the higher the index, the darker the color.
   ///
   /// There are 4 valid indexes
   /// - 0, light ≡ 100

@@ -7,7 +7,7 @@ import 'deep_orange.dart';
 /// See also
 /// - [deepOrange](https://api.flutter.dev/flutter/material/Colors/deepOrange-constant.html)
 class DeepOranges extends SwatchBase {
-  /// Ten shades of deep orange; the greater the index, the darker the color.
+  /// Ten shades of deep orange; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

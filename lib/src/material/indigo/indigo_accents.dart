@@ -7,7 +7,7 @@ import 'indigo_accent.dart';
 /// See also
 /// - [indigo accent](https://api.flutter.dev/flutter/material/Colors/indigoAccent-constant.html)
 class IndigoAccents extends SwatchBase {
-  /// Four shades of indigo accent; the greater the index, the darker the color.
+  /// Four shades of indigo accent; the higher the index, the darker the color.
   ///
   /// There are 4 valid indexes
   /// - 0, light ≡ 100

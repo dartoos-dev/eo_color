@@ -7,7 +7,7 @@ import 'purple.dart';
 /// See also
 /// - [purple](https://api.flutter.dev/flutter/material/Colors/purple-constant.html)
 class Purples extends SwatchBase {
-  /// Ten shades of purple; the greater the index, the darker the color.
+  /// Ten shades of purple; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

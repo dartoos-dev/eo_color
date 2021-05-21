@@ -7,7 +7,7 @@ import 'cyan.dart';
 /// See also
 /// - [cyan](https://api.flutter.dev/flutter/material/Colors/cyan-constant.html)
 class Cyans extends SwatchBase {
-  /// Ten shades of cyan; the greater the index, the darker the color.
+  /// Ten shades of cyan; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

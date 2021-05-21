@@ -7,7 +7,7 @@ import 'blue_accent.dart';
 /// See also
 /// - [blue accent](https://api.flutter.dev/flutter/material/Colors/blueAccent-constant.html)
 class BlueAccents extends SwatchBase {
-  /// Four shades of blue accent; the greater the index, the darker the color.
+  /// Four shades of blue accent; the higher the index, the darker the color.
   ///
   /// There are 4 valid indexes
   /// - 0, light ≡ 100

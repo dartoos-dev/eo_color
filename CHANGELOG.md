@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Swatches:** Greens, GreenAccents; LightGreens, LightGreenAccents; Teals,
     TealAccents.
 
+### Fixed
+- Incorrect use of the word _greater_ as comparative for _index_; replaced by _higher_.
+
 ## [0.0.8] - 2021-05-20
 ### Added
 - Amber, Lime, Yellow palettes and swatches - [#42](https://github.com/dartoos-dev/eo_color/issues/49).

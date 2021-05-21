@@ -7,7 +7,7 @@ import 'orange.dart';
 /// See also
 /// - [orange](https://api.flutter.dev/flutter/material/Colors/orange-constant.html)
 class Oranges extends SwatchBase {
-  /// Ten shades of orange; the greater the index, the darker the color.
+  /// Ten shades of orange; the higher the index, the darker the color.
   ///
   /// There are 10 valid indexes
   /// - 0, ultra light ≡ 50

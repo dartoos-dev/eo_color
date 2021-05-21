@@ -7,7 +7,7 @@ import 'lime_accent.dart';
 /// See also
 /// - [lime accent](https://api.flutter.dev/flutter/material/Colors/limeAccent-constant.html)
 class LimeAccents extends SwatchBase {
-  /// Four shades of lime accent; the greater the index, the darker the color.
+  /// Four shades of lime accent; the higher the index, the darker the color.
   ///
   /// There are 4 valid indexes
   /// - 0, light ≡ 100

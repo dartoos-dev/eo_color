@@ -7,7 +7,7 @@ import 'green_accent.dart';
 /// See also
 /// - [green accent](https://api.flutter.dev/flutter/material/Colors/greenAccent-constant.html)
 class GreenAccents extends SwatchBase {
-  /// Four shades of green accent; the greater the index, the darker the color.
+  /// Four shades of green accent; the higher the index, the darker the color.
   ///
   /// There are 4 valid indexes
   /// - 0, light ≡ 100

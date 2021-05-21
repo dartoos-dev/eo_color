@@ -7,7 +7,7 @@ import 'cyan_accent.dart';
 /// See also
 /// - [cyan accent](https://api.flutter.dev/flutter/material/Colors/cyanAccent-constant.html)
 class CyanAccents extends SwatchBase {
-  /// Four shades of cyan accent; the greater the index, the darker the color.
+  /// Four shades of cyan accent; the higher the index, the darker the color.
   ///
   /// There are 4 valid indexes
   /// - 0, light ≡ 100
