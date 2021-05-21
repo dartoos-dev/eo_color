@@ -13,6 +13,8 @@ export 'src/material/deep_orange/deep_orange.dart';
 export 'src/material/deep_orange/deep_orange_accent.dart';
 export 'src/material/deep_purple/deep_purple.dart';
 export 'src/material/deep_purple/deep_purple_accent.dart';
+export 'src/material/green/green.dart';
+export 'src/material/green/green_accent.dart';
 export 'src/material/grey/grey.dart';
 export 'src/material/indigo/indigo.dart';
 export 'src/material/indigo/indigo_accent.dart';

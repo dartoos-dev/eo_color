@@ -12,6 +12,8 @@ export 'src/material/deep_orange/deep_orange_accents.dart';
 export 'src/material/deep_orange/deep_oranges.dart';
 export 'src/material/deep_purple/deep_purple_accents.dart';
 export 'src/material/deep_purple/deep_purples.dart';
+export 'src/material/green/green_accents.dart';
+export 'src/material/green/greens.dart';
 export 'src/material/grey/greys.dart';
 export 'src/material/indigo/indigo_accents.dart';
 export 'src/material/indigo/indigos.dart';
