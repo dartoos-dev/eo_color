@@ -28,24 +28,28 @@ class Primaries extends SwatchBase {
   /// - 16, brown,
   /// - 17, blue-grey
   const Primaries()
-      : super(const [
-          Red(),
-          Pink(),
-          Purple(),
-          DeepPurple(),
-          Indigo(),
-          Blue(),
-          LightBlue(),
-          Cyan(),
-          Teal(),
-          Green(),
-          LightGreen(),
-          Lime(),
-          Yellow(),
-          Amber(),
-          Orange(),
-          DeepOrange(),
-          Brown(),
-          BlueGrey()
-        ]);
+      // coverage:ignore-start
+      : super(
+          const [
+            Red(),
+            Pink(),
+            Purple(),
+            DeepPurple(),
+            Indigo(),
+            Blue(),
+            LightBlue(),
+            Cyan(),
+            Teal(),
+            Green(),
+            LightGreen(),
+            Lime(),
+            Yellow(),
+            Amber(),
+            Orange(),
+            DeepOrange(),
+            Brown(),
+            BlueGrey()
+          ],
+        );
+  // coverage:ignore-end
 }
