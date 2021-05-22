@@ -30,6 +30,8 @@ export 'src/material/pink/pinks.dart';
 export 'src/material/primaries.dart';
 export 'src/material/purple/purple_accents.dart';
 export 'src/material/purple/purples.dart';
+export 'src/material/red/red_accents.dart';
+export 'src/material/red/reds.dart';
 export 'src/material/teal/teal_accents.dart';
 export 'src/material/teal/teals.dart';
 export 'src/material/yellow/yellow_accents.dart';

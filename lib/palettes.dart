@@ -30,6 +30,8 @@ export 'src/material/pink/pink.dart';
 export 'src/material/pink/pink_accent.dart';
 export 'src/material/purple/purple.dart';
 export 'src/material/purple/purple_accent.dart';
+export 'src/material/red/red.dart';
+export 'src/material/red/red_accent.dart';
 export 'src/material/teal/teal.dart';
 export 'src/material/teal/teal_accent.dart';
 export 'src/material/yellow/yellow.dart';
