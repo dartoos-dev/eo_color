@@ -25,7 +25,7 @@ class Primaries extends SwatchBase {
   /// - 13, amber
   /// - 14, orange
   /// - 15, deep orange
-  /// - 16, brown,
+  /// - 16, brown
   /// - 17, blue-grey
   const Primaries()
       // coverage:ignore-start
