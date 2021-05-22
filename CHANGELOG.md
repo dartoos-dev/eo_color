@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Red, Pink palettes and swatches - [#57](https://github.com/dartoos-dev/eo_color/issues/57)
   - **Palettes:** Pink, PinkAccent; Red, RedAccent.
   - **Swatches:** Pinks, PinkAccents; Reds, RedAccents.
+- Transparent
 
 ## [0.0.9] - 2021-05-21
 ### Added

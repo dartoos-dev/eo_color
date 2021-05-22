@@ -34,6 +34,7 @@ export 'src/material/red/red.dart';
 export 'src/material/red/red_accent.dart';
 export 'src/material/teal/teal.dart';
 export 'src/material/teal/teal_accent.dart';
+export 'src/material/transparent.dart';
 export 'src/material/yellow/yellow.dart';
 export 'src/material/yellow/yellow_accent.dart';
 export 'src/palette.dart';
