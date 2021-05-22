@@ -6,7 +6,7 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   group('Blue Accent Palette', () {
     test('default', () {
-      expect(const BlueAccent().color, const Color(0xFF448AFF));
+      expect(const BlueAccent().color, Colors.blueAccent.shade200);
     });
     test('light', () {
       expect(const BlueAccent.light().color, Colors.blueAccent.shade100);
