@@ -25,6 +25,8 @@ export 'src/material/lime/lime_accents.dart';
 export 'src/material/lime/limes.dart';
 export 'src/material/orange/orange_accents.dart';
 export 'src/material/orange/oranges.dart';
+export 'src/material/pink/pink_accents.dart';
+export 'src/material/pink/pinks.dart';
 export 'src/material/primaries.dart';
 export 'src/material/purple/purple_accents.dart';
 export 'src/material/purple/purples.dart';

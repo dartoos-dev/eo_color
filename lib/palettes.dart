@@ -26,6 +26,8 @@ export 'src/material/lime/lime.dart';
 export 'src/material/lime/lime_accent.dart';
 export 'src/material/orange/orange.dart';
 export 'src/material/orange/orange_accent.dart';
+export 'src/material/pink/pink.dart';
+export 'src/material/pink/pink_accent.dart';
 export 'src/material/purple/purple.dart';
 export 'src/material/purple/purple_accent.dart';
 export 'src/material/teal/teal.dart';
