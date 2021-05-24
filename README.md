@@ -33,7 +33,7 @@ the two core interfaces are `Palette` and `Swatch`.
 
 It represents color palettes from which a color can be picked. Very often,
 classes provide named constructors in which the desired color is selected to be
-retrieved afterwards - via the `color` property.
+retrieved afterwards - via `color` property.
 
 #### Material Design palette classes
 
