@@ -2,6 +2,7 @@
 
 export 'src/material/amber/amber.dart';
 export 'src/material/amber/amber_accent.dart';
+export 'src/material/black/black.dart';
 export 'src/material/blue/blue.dart';
 export 'src/material/blue/blue_accent.dart';
 export 'src/material/blue_grey/blue_grey.dart';
