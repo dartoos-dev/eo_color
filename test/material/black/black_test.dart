@@ -8,6 +8,9 @@ void main() {
     test('fully opaque', () {
       expect(const Black().color, Colors.black);
     });
+    test('87% opacity', () {
+      expect(const Black.opacity87().color, Colors.black87);
+    });
     test('call method', () {
       const black = Black();
       expect(black(), black.color);

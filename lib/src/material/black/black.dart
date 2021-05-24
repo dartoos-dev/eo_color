@@ -1,6 +1,6 @@
 import 'package:eo_color/palettes.dart';
 
-/// Material Design black.
+/// Material Design black #000000.
 ///
 /// Constructors/opacity:
 /// - **() fully opaque**
@@ -16,4 +16,7 @@ import 'package:eo_color/palettes.dart';
 class Black extends PaletteRGB {
   /// Fully opaque.
   const Black() : super.black();
+
+  /// 87% opacity.
+  const Black.opacity87() : super.black(0xDD);
 }
