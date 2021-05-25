@@ -1,5 +1,6 @@
 /// The color swatches.
 
+export 'src/material/accents.dart';
 export 'src/material/amber/amber_accents.dart';
 export 'src/material/amber/ambers.dart';
 export 'src/material/blue/blue_accents.dart';
