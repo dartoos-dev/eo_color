@@ -8,7 +8,7 @@ alt="EO-Color logo" width="112" height="96"/>
 [![DevOps By Rultor.com](https://www.rultor.com/b/dartoos-dev/eo_color)](https://www.rultor.com/p/dartoos-dev/eo_color)
 
 [![pub](https://img.shields.io/pub/v/eo_color)](https://pub.dev/packages/eo_color)
-[![license](https://img.shields.io/badge/license-mit-green.svg)](https://github.com/dartoos-dev/eo_color/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/license-mit-green.svg)](https://github.com/dartoos-dev/eo_color/blob/master/LICENSE)
 [![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
 [![PDD status](https://www.0pdd.com/svg?name=dartoos-dev/eo_color)](https://www.0pdd.com/p?name=dartoos-dev/eo_color)
 [![build](https://github.com/dartoos-dev/eo_color/actions/workflows/build.yml/badge.svg)](https://github.com/dartoos-dev/eo_color/actions/)
@@ -23,7 +23,12 @@ Material Design color palettes. It is intended to be used as:
 
 A key benefit of **EO-Color** is to improve the source code readability and
 maintainability by providing a declarative interface. For example, to get a
-light shade of grey, you just have to **declare** `Grey.light()`.
+light shade of grey, simply **declare** `Grey.light()`.
+
+The use of "cryptic" indexes such as ```100, 200 ...  800, 900``` to select the
+degree of darkness has been deliberately dropped in favour of a more friendly
+approach: the use of **adverbs** (ultra, very, bit, etc) and **adjectives**
+(light, dark, etc).
 
 ## Getting Started
 
@@ -33,9 +38,9 @@ the two core interfaces are `Palette` and `Swatch`.
 
 ### Palette interface
 
-It represents color palettes from which a color can be picked. Very often,
-classes provide named constructors in which the desired color is selected to be
-retrieved afterwards - via `color` property.
+It represents color palettes from which a color can be picked. Tipically,
+classes that implement _Palette_ provide named constructors in which the desired
+color is selected to be retrieved afterwards - via `color` property.
 
 #### Material Design palette classes
 
@@ -63,8 +68,10 @@ class Greyish extends StatelessWidget {
 }
 ```
 
-<!-- #### Indexes by constructors of the normal and accent color classes -->
-#### Indexes by named constructors
+#### Equivalence between the Material Design indexes and constructors
+
+- **Note:** "Normal" are color classes such as _Amber_, _Green_, etc; "Accent"
+  are accent color classes such as _AmberAccent_, _GreenAccent_, etc.
 
 | Index | Normal     | Accent |
 |:------| ---------- |:-------|
@@ -85,10 +92,10 @@ class Greyish extends StatelessWidget {
 
 ### Swatch interface
 
-A color swatch is a collection of related colors such as the colors of the
+A color swatch is a collection of related colors, such as the colors of the
 rainbow, shades of grey, etc. Its single property `colors` retrieves several
 colors at once as an `Iterable<Color>`. For instance, `Greys().colors` retrieves
-ten shades of grey, as defined by the Material Design standard.
+ten shades of grey - as defined by the Material Design standard.
 
 #### Color Swatch Classes
 
@@ -140,12 +147,13 @@ class RectGradient extends StatelessWidget {
 To run the showcase application:
 
 ```shell
-cd example/
+git clone https://github.com/dartoos-dev/eo_color.git
+cd eo_color/example/
 flutter run -d chrome
 
 ```
 
-This should start the color palettes showcase in Chrome.
+This should start the showcase application in Chrome browser.
 
 ![EO-Color-Showcase](https://user-images.githubusercontent.com/24878574/118488319-fe9ce200-b6f1-11eb-9b1f-ba0c4e8fe86a.png)
 
