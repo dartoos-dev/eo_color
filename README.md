@@ -8,7 +8,7 @@ alt="EO-Color logo" width="112" height="96"/>
 [![DevOps By Rultor.com](https://www.rultor.com/b/dartoos-dev/eo_color)](https://www.rultor.com/p/dartoos-dev/eo_color)
 
 [![pub](https://img.shields.io/pub/v/eo_color)](https://pub.dev/packages/eo_color)
-[![license](https://img.shields.io/badge/license-mit-green.svg)](https://github.com/dartoos-dev/eo_color/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/license-mit-green.svg)](https://github.com/dartoos-dev/eo_color/blob/master/LICENSE)
 [![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
 [![PDD status](https://www.0pdd.com/svg?name=dartoos-dev/eo_color)](https://www.0pdd.com/p?name=dartoos-dev/eo_color)
 [![build](https://github.com/dartoos-dev/eo_color/actions/workflows/build.yml/badge.svg)](https://github.com/dartoos-dev/eo_color/actions/)
@@ -22,8 +22,15 @@ Material Design color palettes. It is intended to be used as:
 - a base framework for more specific color packages
 
 A key benefit of **EO-Color** is to improve the source code readability and
-maintainability by providing a declarative interface. For example, to get a
-light shade of grey, you just have to **declare** `Grey.light()`.
+maintainability by providing a declarative interface.
+
+The use of "cryptic" indexes such as ```100, 200 ...  800, 900``` to select the
+degree of darkness has been deliberately dropped in favour of a more friendly
+approach: the use of **adverbs** (ultra, very, bit, etc) and **adjectives**
+(light, dark, etc). In this way, to get a **very dark** shade of grey, simply
+declare ```Grey.veryDark()``` instead of ```Colors.grey.shade900```; to get a
+light shade, ```Grey.light()```; and so on.
+
 
 ## Getting Started
 
@@ -63,7 +70,6 @@ class Greyish extends StatelessWidget {
 }
 ```
 
-<!-- #### Indexes by constructors of the normal and accent color classes -->
 #### Indexes by named constructors
 
 | Index | Normal     | Accent |
@@ -140,12 +146,13 @@ class RectGradient extends StatelessWidget {
 To run the showcase application:
 
 ```shell
+git clone https://github.com/dartoos-dev/eo_color.git
 cd example/
 flutter run -d chrome
 
 ```
 
-This should start the color palettes showcase in Chrome.
+This should start the showcase application in Chrome browser.
 
 ![EO-Color-Showcase](https://user-images.githubusercontent.com/24878574/118488319-fe9ce200-b6f1-11eb-9b1f-ba0c4e8fe86a.png)
 
