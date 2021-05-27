@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - Stricter lint rules - [#71](https://github.com/dartoos-dev/eo_color/issues/71).
+- Minor corrections to the README file - [#71](https://github.com/dartoos-dev/eo_color/issues/71).
 
 ## [0.0.12] - 2021-05-25
 ### Added
