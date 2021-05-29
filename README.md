@@ -144,16 +144,19 @@ class RectGradient extends StatelessWidget {
 
 ### Showcase application
 
+The showcase application provides a fully working example, focused on
+demonstrating exactly three color palettes in action - BlueGrey, Grey and
+Brown. You can take the code in this showcase and experiment with it.
+
 To run the showcase application:
 
 ```shell
 git clone https://github.com/dartoos-dev/eo_color.git
 cd eo_color/example/
 flutter run -d chrome
-
 ```
 
-This should start the showcase application in Chrome browser.
+This should launch the showcase application on Chrome in debug mode.
 
 ![EO-Color-Showcase](https://user-images.githubusercontent.com/24878574/118488319-fe9ce200-b6f1-11eb-9b1f-ba0c4e8fe86a.png)
 
