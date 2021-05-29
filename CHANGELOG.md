@@ -6,10 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- the issue number associated with the section 0.0.14 of this CHANGELOG.
 
 ## [0.0.14] - 2021-05-29
 ### Changed
-- add a better description of the package in README - [#75](https://github.com/dartoos-dev/eo_color/issues/75).
+- add a better description of the package in README - [#78](https://github.com/dartoos-dev/eo_color/issues/78).
 
 ## [0.0.13] - 2021-05-29
 ### Changed - v1.0.0 Pre-Release
