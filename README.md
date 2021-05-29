@@ -69,9 +69,13 @@ class Greyish extends StatelessWidget {
 ```
 
 #### Equivalence between the Material Design indexes and constructors
+  
+- **Note:**
+  - The **"Normal"** column refers to classes that represent non-accented colors:
+    _Amber_, _Green_, _Red_, etc.
+  - The **"Accent"** column refers to classes that represent accented colors: _AmberAccent_,
+    _GreenAccent_, _RedAccent_, etc.
 
-- **Note:** "Normal" are color classes such as _Amber_, _Green_, etc; "Accent"
-  are accent color classes such as _AmberAccent_, _GreenAccent_, etc.
 
 | Index | Normal     | Accent |
 |:------| ---------- |:-------|
