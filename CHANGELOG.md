@@ -6,7 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Changed
+### Changed - v1.0.0 Pre-Release
+- Less verbose and more elegant CHANGELOG - [#75](https://github.com/dartoos-dev/eo_color/issues/75).
+- A more elegant README.
 - Stricter lint rules - [#71](https://github.com/dartoos-dev/eo_color/issues/71).
 - Minor corrections to the README file - [#71](https://github.com/dartoos-dev/eo_color/issues/71).
 
@@ -25,17 +27,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Red, Pink palettes and swatches - [#57](https://github.com/dartoos-dev/eo_color/issues/57)
-  - **Palettes:** Pink, PinkAccent; Red, RedAccent.
-  - **Swatches:** Pinks, PinkAccents; Reds, RedAccents.
 - Transparent
 
 ## [0.0.9] - 2021-05-21
 ### Added
 - Green palettes and swatches - [#53](https://github.com/dartoos-dev/eo_color/issues/53)
-  - **Palettes:** Green, GreenAccent; LightGreen, LightGreenAccent; Teal,
-    TealAccent.
-  - **Swatches:** Greens, GreenAccents; LightGreens, LightGreenAccents; Teals,
-    TealAccents.
 
 ### Fixed
 - Incorrect use of the word _greater_ as comparative for _index_; replaced by _higher_.
@@ -43,9 +39,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.8] - 2021-05-20
 ### Added
 - Amber, Lime, Yellow palettes and swatches - [#42](https://github.com/dartoos-dev/eo_color/issues/49).
-  - **Palettes:** Amber, AmberAccent; Lime, LimeAccent; Yellow, YellowAccent.
-  - **Swatches:** Ambers, AmberAccents; Limes, LimeAccents; Yellows,
-    YellowAccents.
 
 ### Changed
 - rearrangement in src directory structure - [#50](https://github.com/dartoos-dev/eo_color/issues/50).
@@ -53,8 +46,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.7] - 2021-05-19
 ### Added
 - Orange and deep orange palettes and swatches - [#42](https://github.com/dartoos-dev/eo_color/issues/42).
-  - **Palettes:** Orange, OrangeAccent; DeepOrange, DeepOrangeAccent.
-  - **Swatches:** Oranges, OrangeAccents; DeepOranges, DeepOrangeAccents.
 
 ### Fixed
 - README typos - [#45](https://github.com/dartoos-dev/eo_color/issues/45).
@@ -63,8 +54,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Purplish palettes and swatches - [#38](https://github.com/dartoos-dev/eo_color/issues/38).
-  - **Palettes:** Purple, PurpleAccent; DeepPurple, DeepPurpleAccent.
-  - **Swatches:** Purples, PurpleAccents; DeepPurples, DeepPurpleAccents.
 
 ### Changed
 - Reorganization of the README file structure - [#40](https://github.com/dartoos-dev/eo_color/issues/40).
@@ -77,34 +66,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Partial implementation of the Primaries swatch - [#24](https://github.com/dartoos-dev/eo_color/issues/24).
 - Bluish palettes and swatches - [#29](https://github.com/dartoos-dev/eo_color/issues/29).
-  - **Palettes:** Blue, BlueAccent; LightBlue, LighBlueAccent; Cyan, CyanAccent; Indigo,
-    IndigoAccent.
-  - **Swatches:** Blues, BlueAccents; LightBlues, LightBlueAccents; Cyans, CyanAccents;
-    Indigos, IndigoAccents.
 
 ### Changed
-- Package logo in README - cute wooden color palette -
-  [#25](https://github.com/dartoos-dev/eo_color/issues/25).
+- Package logo in README - cute wooden color palette - [#25](https://github.com/dartoos-dev/eo_color/issues/25).
 - This CHANGELOG's formatting.
 
 ## [0.0.3] - 2021-05-17
 ### Added
-- Showcase application of the Material Design color palettes as an example -
-  [#21](https://github.com/dartoos-dev/eo_color/issues/21).
+- Showcase application as an example - [#21](https://github.com/dartoos-dev/eo_color/issues/21).
 
 ## [0.0.2] - 2021-05-15
 ### Added
 - Greyish color paletes and swatches - [#16](https://github.com/dartoos-dev/eo_color/issues/16).
-  - **Palettes:** BlueGrey, Brown, Grey.
-  - **Swatches:** BlueGreys, Browns, Greys.
 
 ### Changed
-- Less verbose and more elegant README file -
-  [#19](https://github.com/dartoos-dev/eo_color/issues/19).
+- Less verbose and more elegant README file - [#19](https://github.com/dartoos-dev/eo_color/issues/19).
 
 ## [0.0.1] - 2021-05-14
 ### Added
-- Palette interface and PaletteRGB abstract class -
-  [#3](https://github.com/dartoos-dev/eo_color/issues/3).
-- Swatch interface and SwatchBase abstract class -
-  [#14](https://github.com/dartoos-dev/eo_color/issues/14).
+- Palette interface and PaletteRGB abstract class - [#3](https://github.com/dartoos-dev/eo_color/issues/3).
+- Swatch interface and SwatchBase abstract class - [#14](https://github.com/dartoos-dev/eo_color/issues/14).
