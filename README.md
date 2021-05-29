@@ -149,7 +149,7 @@ class RectGradient extends StatelessWidget {
 ### Showcase application
 
 The showcase application provides a fully working example, focused on
-demonstrating exactly three color palettes in action - BlueGrey, Grey and
+demonstrating exactly three color palettes in action - BlueGrey, Grey, and
 Brown. You can take the code in this showcase and experiment with it.
 
 To run the showcase application:
