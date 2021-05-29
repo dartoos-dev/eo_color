@@ -22,13 +22,13 @@ Material Design color palettes. It is intended to be used as:
 - a base framework for more specific color packages
 
 A key benefit of **EO-Color** is to improve the source code readability and
-maintainability by providing a declarative interface. For example, to get a
-light shade of grey, simply **declare** `Grey.light()`.
+maintainability by providing a declarative interface.
 
-The use of "cryptic" indexes such as ```100, 200 ...  800, 900``` to select the
-degree of darkness has been deliberately dropped in favour of a more friendly
-approach: the use of **adverbs** (ultra, very, bit, etc) and **adjectives**
-(light, dark, etc).
+The use of **obscure numeric indexes** such as ```100, 200 ...  800, 900``` to
+select the shade of a color has been deliberately dropped in favour of a more
+friendly approach: the use of **adverbs** (ultra, very, bit, etc) and
+**adjectives** (light, dark, etc). For example, to get a light shade of grey,
+simply **declare** `Grey.light()`.
 
 ## Getting Started
 
