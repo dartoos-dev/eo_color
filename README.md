@@ -24,7 +24,7 @@ Material Design color palettes. It is intended to be used as:
 A key benefit of **EO-Color** is to improve the source code readability and
 maintainability by providing a declarative interface.
 
-The use of **obscure numeric indexes** such as ```100, 200 ...  800, 900``` to
+The use of **obscure numeric indexes** such as `100, 200 ... 800, 900` to
 select the shade of a color has been deliberately dropped in favour of a more
 friendly approach: the use of **adverbs** (ultra, very, bit, etc) and
 **adjectives** (light, dark, etc). For example, to get a light shade of grey,
@@ -38,48 +38,40 @@ the two core interfaces are `Palette` and `Swatch`.
 
 ### Palette interface
 
-It represents color palettes from which a color can be picked. Tipically,
-classes that implement _Palette_ provide named constructors in which the desired
-color is selected to be retrieved afterwards - via `color` property.
+It represents color palettes from which a color can be picked.
 
-#### Material Design palette classes
+Typically, subclasses of the _Palette_ interface provide named constructors in
+which the desired color is picked to be retrieved afterwards via the `color`
+property.
 
-These are classes whose name is the color they represent, such as "Grey". For
-example: `Grey()` represents the primary grey color, equivalent to the Flutter's
-cryptic `Colors.grey.shade500`; `Grey.light()` ≡ `Colors.grey.shade200`;
-`Grey.veryDark()` ≡ `Colors.grey.shade900`; and so on.
+For example, the command `Grey()` retrieves the primary shade of grey and is
+equivalent to the Flutter's cryptic command `Colors.grey.shade500`;
+`Grey.light()` ≡ `Colors.grey.shade200`; `Grey.veryDark()` ≡
+`Colors.grey.shade900`; and so on.
 
-#### Palettes in action
+**Code snippet:**
 
 ```dart
-import 'package:eo_color/palettes.dart';
-import 'package:flutter/material.dart';
-
-class Greyish extends StatelessWidget {
-
-  static const _light = Grey.light();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: _light.color,
-    );
-  }
+/// Builds a greyish container.
+@override
+Widget build(BuildContext context) {
+  return Container(
+    color: Grey.light().color,
+  );
 }
 ```
 
-#### Equivalence between the Material Design indexes and constructors
-  
+#### Material Design shade indexes vs. named constructors
+
 - **Note:**
   - The **"Normal"** column refers to classes that represent non-accented colors:
     _Amber_, _Green_, _Red_, etc.
   - The **"Accent"** column refers to classes that represent accented colors: _AmberAccent_,
     _GreenAccent_, _RedAccent_, etc.
 
-
 | Index | Normal     | Accent |
-|:------| ---------- |:-------|
-|  50   | ultraLight |        |
+| :---- | ---------- | :----- |
+| 50    | ultraLight |        |
 | 100   | veryLight  | light  |
 | 200   | light      | ()     |
 | 300   | lighter    |        |
@@ -90,22 +82,18 @@ class Greyish extends StatelessWidget {
 | 800   | dark       |        |
 | 900   | veryDark   |        |
 
-#### Supported palette colors
+See also:
 
-- [palettes](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
+- [color palettes](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
 
 ### Swatch interface
 
-A color swatch is a collection of related colors, such as the colors of the
-rainbow, shades of grey, etc. Its single property `colors` retrieves several
-colors at once as an `Iterable<Color>`. For instance, `Greys().colors` retrieves
-ten shades of grey - as defined by the Material Design standard.
+It represents a collection of related colors, such as the rainbow colors, shades
+of grey, etc.
 
-#### Color Swatch Classes
-
-These are classes whose name is the plural of a color, such as "Greys". For
-example: `Greys().colors` retrieves an `Iterable<Color>` containing ten shades
-of grey; the higher the index, the darker the color.
+Its single property `colors` retrieves several colors at once as an
+`Iterable<Color>` object. E.g., `Greys().colors` retrieves ten shades of grey;
+the higher the index, the darker the color.
 
 #### Swatch in action
 
@@ -142,17 +130,17 @@ class RectGradient extends StatelessWidget {
 }
 ```
 
-#### Supported color swatches
+See also:
 
 - [swatches](https://pub.dev/documentation/eo_color/latest/swatches/swatches-library.html)
 
-### Showcase application
+### Demo application
 
-The showcase application provides a fully working example, focused on
+The demo application provides a fully working example, focused on
 demonstrating exactly three color palettes in action - BlueGrey, Grey, and
-Brown. You can take the code in this showcase and experiment with it.
+Brown. You can take the code in this demo and experiment with it.
 
-To run the showcase application:
+To run the demo application:
 
 ```shell
 git clone https://github.com/dartoos-dev/eo_color.git
@@ -160,9 +148,9 @@ cd eo_color/example/
 flutter run -d chrome
 ```
 
-This should launch the showcase application on Chrome in debug mode.
+This should launch the demo application on Chrome in debug mode.
 
-![EO-Color-Showcase](https://user-images.githubusercontent.com/24878574/118488319-fe9ce200-b6f1-11eb-9b1f-ba0c4e8fe86a.png)
+![Demo-App](https://user-images.githubusercontent.com/24878574/122656689-440a6000-d133-11eb-9100-46d6ff344283.png)
 
 ### References
 
