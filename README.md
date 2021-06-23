@@ -13,6 +13,7 @@ alt="EO-Color logo" width="112" height="96"/>
 [![PDD status](https://www.0pdd.com/svg?name=dartoos-dev/eo_color)](https://www.0pdd.com/p?name=dartoos-dev/eo_color)
 [![build](https://github.com/dartoos-dev/eo_color/actions/workflows/build.yml/badge.svg)](https://github.com/dartoos-dev/eo_color/actions/)
 [![codecov](https://codecov.io/gh/dartoos-dev/eo_color/branch/master/graph/badge.svg)](https://codecov.io/gh/dartoos-dev/eo_color)
+[![CodeFactor](https://www.codefactor.io/repository/github/rafamizes/eo_color/badge)](https://www.codefactor.io/repository/github/rafamizes/eo_color)
 [![Hits-of-Code](https://hitsofcode.com/github/dartoos-dev/eo_color?branch=master)](https://hitsofcode.com/github/dartoos-dev/eo_color/view?branch=master)
 
 **EO-Color** is an **E**legant and **O**bject-oriented implementation of the
