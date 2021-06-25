@@ -1,5 +1,3 @@
-## eo_color
-
 <img
 src="https://user-images.githubusercontent.com/24878574/118523677-bdb5c500-b713-11eb-942f-26a7e0b4554e.png"
 alt="EO-Color logo" width="112" height="96"/>
@@ -9,14 +7,15 @@ alt="EO-Color logo" width="112" height="96"/>
 
 [![pub](https://img.shields.io/pub/v/eo_color)](https://pub.dev/packages/eo_color)
 [![license](https://img.shields.io/badge/license-mit-green.svg)](https://github.com/dartoos-dev/eo_color/blob/master/LICENSE)
-[![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
 [![PDD status](https://www.0pdd.com/svg?name=dartoos-dev/eo_color)](https://www.0pdd.com/p?name=dartoos-dev/eo_color)
+
 [![build](https://github.com/dartoos-dev/eo_color/actions/workflows/build.yml/badge.svg)](https://github.com/dartoos-dev/eo_color/actions/)
 [![codecov](https://codecov.io/gh/dartoos-dev/eo_color/branch/master/graph/badge.svg)](https://codecov.io/gh/dartoos-dev/eo_color)
-[![CodeFactor](https://www.codefactor.io/repository/github/rafamizes/eo_color/badge)](https://www.codefactor.io/repository/github/rafamizes/eo_color)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/rafamizes/eo_color)
+[![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
 [![Hits-of-Code](https://hitsofcode.com/github/dartoos-dev/eo_color?branch=master)](https://hitsofcode.com/github/dartoos-dev/eo_color/view?branch=master)
 
-**EO-Color** is an **E**legant and **O**bject-oriented implementation of the
+**EO-Color** is an **E**legant, **O**bject-oriented implementation of the
 Material Design color palettes. It is intended to be used as:
 
 - an alternative to the Flutter's built-in colors
