@@ -1,4 +1,8 @@
-/// The color palettes.
+/// Palettes.
+///
+/// `Palette` is a general purpose interface that represents any color palette
+/// from which a single color can be picked at a time.
+library palettes;
 
 export 'src/material/amber/amber.dart';
 export 'src/material/amber/amber_accent.dart';

@@ -1,4 +1,11 @@
-/// The color swatches.
+/// Swatches.
+///
+/// `Swatch` is a general purpose interface that represents any collection of
+/// related colors. For example, classes that implement it could represent:
+/// - rainbow colors
+/// - gradient of a brand logo
+/// - shades of grey
+library swatches;
 
 export 'src/material/accents.dart';
 export 'src/material/amber/amber_accents.dart';
