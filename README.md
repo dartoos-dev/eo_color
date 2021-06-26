@@ -15,6 +15,8 @@ alt="EO-Color logo" width="112" height="96"/>
 [![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
 [![Hits-of-Code](https://hitsofcode.com/github/dartoos-dev/eo_color?branch=master)](https://hitsofcode.com/github/dartoos-dev/eo_color/view?branch=master)
 
+## Overview
+
 **EO-Color** is an **E**legant, **O**bject-oriented implementation of the
 Material Design color palettes. It is intended to be used as:
 
@@ -24,19 +26,33 @@ Material Design color palettes. It is intended to be used as:
 A key benefit of **EO-Color** is to improve the source code readability and
 maintainability by providing a declarative interface.
 
-The use of **obscure numeric indexes** such as `100, 200 ... 800, 900` to
-select the shade of a color has been deliberately dropped in favour of a more
-friendly approach: the use of **adverbs** (ultra, very, bit, etc) and
-**adjectives** (light, dark, etc). For example, to get a light shade of grey,
-simply **declare** `Grey.light()`.
+The use of **obscure numeric indexes** such as `100,200…800,900` to select a
+shade of a color has been replaced by a more friendly approach: the use of
+**adverbs** (ultra, very, bit, etc.) and **adjectives** (light, dark, etc.).
+
+For example, to get a light shade of grey, you simply **declare**
+`Grey.light()`; for a darker one, `Grey.dark()`; and so on.
+
+## Contents
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+- [Palette interface](#palette-interface)
+- [Numeric indexes X Named constructors](#numeric-indexes-X-named-constructors)
+- [Swatch interface](#swatch-interface)
+- [Swatch in action](#swatch-in-action)
+- [Gradient interface](#gradient-interface)
+- [Demo application](#demo-application)
+- [References](#hex-color-values-references)
 
 ## Getting Started
 
 Like any object-oriented package, this one utilizes interfaces to define
-concepts such as color palettes and swatches. Therefore, it is no surprise that
-the two core interfaces are `Palette` and `Swatch`.
+concepts such as color palette, color swatch, and color gradient. Therefore, it
+is no surprise that the three core interfaces are `Palette`, `Swatch`, and
+`Gradient`.
 
-### Palette interface
+## Palette interface
 
 It represents color palettes from which a color can be picked.
 
@@ -44,24 +60,31 @@ Typically, subclasses of the _Palette_ interface provide named constructors in
 which the desired color is picked to be retrieved afterwards via the `color`
 property.
 
-For example, the command `Grey()` retrieves the primary shade of grey and is
-equivalent to the Flutter's cryptic command `Colors.grey.shade500`;
-`Grey.light()` ≡ `Colors.grey.shade200`; `Grey.veryDark()` ≡
+For example, the command `Blue()` retrieves the primary shade of blue and is
+equivalent to the Flutter's cryptic command `Colors.blue.shade500`;
+`Blue.ultraLight()` ≡ `Colors.blue.shade50`; `Blue.veryDark()` ≡
 `Colors.grey.shade900`; and so on.
+
+There are also accented color classes. For example, `BlueAccent`, `TealAccent`.
+
+For a complete list of colors with detailed information — hex codes, indexes,
+opacity, etc. —:
+
+- [color palettes](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
 
 **Code snippet:**
 
 ```dart
-/// Builds a greyish container.
+/// Builds a bluish container.
 @override
 Widget build(BuildContext context) {
   return Container(
-    color: Grey.light().color,
+    color: Blue().color,
   );
 }
 ```
 
-#### Material Design shade indexes vs. named constructors
+## Numeric indexes vs. Named constructors
 
 - **Note:**
   - The **"Normal"** column refers to classes that represent non-accented colors:
@@ -82,20 +105,24 @@ Widget build(BuildContext context) {
 | 800   | dark       |        |
 | 900   | veryDark   |        |
 
-See also:
-
-- [color palettes](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
-
-### Swatch interface
+## Swatch interface
 
 It represents a collection of related colors, such as the rainbow colors, shades
 of grey, etc.
 
 Its single property `colors` retrieves several colors at once as an
-`Iterable<Color>` object. E.g., `Greys().colors` retrieves ten shades of grey;
-the higher the index, the darker the color.
+`Iterable<Color>` object.
 
-#### Swatch in action
+For example, the statement `Greys().colors` retrieves ten shades of grey as
+defined by the Material Design standard; the higher the index, the darker the
+color.
+
+For a complete list of colors with detailed information — hex codes, indexes,
+opacity, etc. —:
+
+- [swatches](https://pub.dev/documentation/eo_color/latest/swatches/swatches-library.html)
+
+## Swatch in action
 
 ```dart
 import 'package:eo_color/swatches.dart';
@@ -130,11 +157,21 @@ class RectGradient extends StatelessWidget {
 }
 ```
 
-See also:
+## Gradient interface
 
-- [swatches](https://pub.dev/documentation/eo_color/latest/swatches/swatches-library.html)
+It represents a range of position-dependent colors, usually used to fill a
+region. The colors produced by a gradient vary continuously with position,
+producing smooth color transitions.
 
-### Demo application
+While the `Swatch` interface retrieves an `iterable<Colors>` object, subclasses
+of `Gradients` retrieves a `List<Colors>`, which makes them better suited for
+dealing with color gradient APIs — these APIs almost always expects as input a
+`List<Color>` object.
+
+An example of a `Gradient` implementation is the abstract class `GradientImmu`
+which retrieves immutable `List<Colors>` objects.
+
+## Demo application
 
 The demo application provides a fully working example, focused on
 demonstrating exactly three color palettes in action - BlueGrey, Grey, and
@@ -152,6 +189,7 @@ This should launch the demo application on Chrome in debug mode.
 
 ![Demo-App](https://user-images.githubusercontent.com/24878574/122656689-440a6000-d133-11eb-9100-46d6ff344283.png)
 
-### References
+## References
 
 - [material design color palette](https://material.io/archive/guidelines/style/color.html#color-color-palette).
+- [color-gradient](https://en.wikipedia.org/wiki/Color_gradient)
