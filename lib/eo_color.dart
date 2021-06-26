@@ -5,5 +5,6 @@
 /// - an elegant, object-oriented framework for more specific color packages.
 library eo_color;
 
+export 'gradients.dart';
 export 'palettes.dart';
 export 'swatches.dart';

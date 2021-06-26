@@ -9,7 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Gradient interface — [83](https://github.com/dartoos-dev/eo_color/issues/83).
 - doc comments about the purpose of each library.
+
+### Changed
+
+- add a code quality badge to REAME.
 
 ## [1.0.0] - 2021-06-19
 
