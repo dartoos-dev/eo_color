@@ -14,7 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- add a code quality badge to REAME.
+- add a code quality badge to README.
+- more elaborated and better formatted README.
 
 ## [1.0.0] - 2021-06-19
 
