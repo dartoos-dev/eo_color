@@ -43,7 +43,7 @@ For example, to get a light shade of grey, you simply **declare**
 - [Swatch in action](#swatch-in-action)
 - [Gradient interface](#gradient-interface)
 - [Demo application](#demo-application)
-- [References](#hex-color-values-references)
+- [References](#references)
 
 ## Getting Started
 
