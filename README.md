@@ -38,7 +38,7 @@ For example, to get a light shade of grey, you simply **declare**
 - [Overview](#overview)
 - [Getting Started](#getting-started)
 - [Palette interface](#palette-interface)
-- [Numeric indexes X Named constructors](#numeric-indexes-X-named-constructors)
+- [Numeric indexes X Named constructors](#numeric-indexes-vs-named-constructors)
 - [Swatch interface](#swatch-interface)
 - [Swatch in action](#swatch-in-action)
 - [Gradient interface](#gradient-interface)
