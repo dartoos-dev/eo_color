@@ -165,8 +165,8 @@ producing smooth color transitions.
 
 While the `Swatch` interface retrieves an `iterable<Colors>` object, subclasses
 of `Gradients` retrieves a `List<Colors>`, which makes them better suited for
-dealing with color gradient APIs — these APIs almost always expects as input a
-`List<Color>` object.
+dealing with color gradient APIs — these APIs almost always expects a
+`List<Color>` object as input.
 
 An example of a `Gradient` implementation is the abstract class `GradientImmu`
 which retrieves immutable `List<Colors>` objects.
