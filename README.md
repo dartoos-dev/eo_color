@@ -117,15 +117,29 @@ and named constructors of the color classes.
 
 ## Swatch interface
 
-It represents a collection of related colors — the rainbow colors, shades
-of grey, etc.
+It represents a collection of related colors. For example:
+
+- shades of grey
+- the color gradient of a brand
+- a user's selected colors
 
 Its single property `colors` retrieves several colors at once as an
 `Iterable<Color>` object.
 
-For example, the statement `Greys().colors` retrieves ten shades of grey as
-defined by the Material Design standard; the higher the index, the darker the
-color.
+Except for the _White_ and _Black_ classes, there is a corresponding "plural"
+class for each color class - accent colors included - that implements the
+_Swatch_ interface. For example, the _Greys_ class represents 10 shades of grey
+— as defined by the Material Design standard.
+
+In this way, the declaration `Greys().colors` retrieves 10 shades of grey; the
+higher the index, the darker the color.
+
+For a red color gradient:
+
+```dart
+/// a color gradient of 10 shades of red.
+final Iterable<Color> theReds = Reds().colors;
+```
 
 For a complete list of color swatches:
 
@@ -133,9 +147,8 @@ For a complete list of color swatches:
 
 ## Swatch in action
 
-The code below is a fully functional example of using of the _Swatch_ interface
-effectively. It creates a rectangle widget filled with a color gradient provided
-by the _swatch_ instance.
+The following code provides a fully working example. It creates a rectangle
+widget filled with a color gradient provided by the _swatch_ instance.
 
 ```dart
 import 'package:eo_color/swatches.dart';
@@ -181,7 +194,7 @@ of `Gradients` retrieves a `List<Colors>`, which makes them better suited for
 dealing with the Flutter's gradient APIs — these APIs almost always expects a
 `List<Color>` object as parameter instead of an `Iterable<Color>` object.
 
-An example of a `Gradient` implementation is the abstract class `GradientImmu`
+An example of a `Gradient` implementation is the abstract class `GradientImmu`,
 which retrieves immutable `List<Colors>` objects.
 
 For a complete list of gradients:
