@@ -40,12 +40,12 @@ for a darker one, `Grey.dark()`.
 - [Overview](#overview)
 - [Getting Started](#getting-started)
 - [Palette interface](#palette-interface)
-- [Numeric indexes X Named constructors](#numeric-indexes-X-named-constructors)
+- [Numeric indexes X Named constructors](#numeric-indexes-vs-named-constructors)
 - [Swatch interface](#swatch-interface)
 - [Swatch in action](#swatch-in-action)
 - [Gradient interface](#gradient-interface)
 - [Demo application](#demo-application)
-- [References](#hex-color-values-references)
+- [References](#references)
 
 ## Getting Started
 
