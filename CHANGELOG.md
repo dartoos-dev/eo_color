@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- typo fixes and minor improvements to README —
+  [89](https://github.com/dartoos-dev/eo_color/issues/89).
+
 ### Added
 
 - Gradient interface — [83](https://github.com/dartoos-dev/eo_color/issues/83).

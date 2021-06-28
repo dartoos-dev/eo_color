@@ -18,20 +18,22 @@ alt="EO-Color logo" width="112" height="96"/>
 ## Overview
 
 **EO-Color** is an **E**legant, **O**bject-oriented implementation of the
-Material Design color palettes. It is intended to be used as:
+Material Design color palettes, as well as a color framework.
+
+It is intended to be used as:
 
 - an alternative to the Flutter's built-in colors
 - a base framework for more specific color packages
 
 A key benefit of **EO-Color** is to improve the source code readability and
-maintainability by providing a declarative interface.
+maintainability by providing declarative interfaces.
 
 The use of **obscure numeric indexes** such as `100,200…800,900` to select a
 shade of a color has been replaced by a more friendly approach: the use of
 **adverbs** (ultra, very, bit, etc.) and **adjectives** (light, dark, etc.).
 
-For example, to get a light shade of grey, you simply **declare**
-`Grey.light()`; for a darker one, `Grey.dark()`; and so on.
+For example, to get a light shade of grey, simply **declare** `Grey.light()`;
+for a darker one, `Grey.dark()`.
 
 ## Contents
 
@@ -62,15 +64,11 @@ property.
 
 For example, the command `Blue()` retrieves the primary shade of blue and is
 equivalent to the Flutter's cryptic command `Colors.blue.shade500`;
-`Blue.ultraLight()` ≡ `Colors.blue.shade50`; `Blue.veryDark()` ≡
+`BlueAccent()` ≡ `Colors.blueAccent.shade50`; `Blue.veryDark()` ≡
 `Colors.grey.shade900`; and so on.
 
-There are also accented color classes. For example, `BlueAccent`, `TealAccent`.
-
-For a complete list of colors with detailed information — hex codes, indexes,
-opacity, etc. —:
-
-- [color palettes](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
+The code snippet below demonstrates how to build a bluish Flutter Container
+widget.
 
 **Code snippet:**
 
@@ -84,13 +82,25 @@ Widget build(BuildContext context) {
 }
 ```
 
+All Material Design colors — and related accent colors — have been implemented.
+
+For a complete list of colors or more detailed information about any color (hex
+codes, indexes, opacity, etc.):
+
+- [color palettes](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
+
 ## Numeric indexes vs. Named constructors
 
+The table below contains the relationship between Material Design indexes
+and named constructors of the color classes.
+
 - **Note:**
-  - The **"Normal"** column refers to classes that represent non-accented colors:
-    _Amber_, _Green_, _Red_, etc.
-  - The **"Accent"** column refers to classes that represent accented colors: _AmberAccent_,
-    _GreenAccent_, _RedAccent_, etc.
+  - The **"Normal"** column refers to classes that represent unaccented colors,
+    such as the _Amber_, _Green_ or _Red_ classes.
+  - The **"Accent"** column refers to classes that represent accent colors, such
+    as the _AmberAccent_, _GreenAccent_ or _RedAccent_ classes.
+  - **"()"** is the default constructor, which in turn represents a primary
+    color shade.
 
 | Index | Normal     | Accent |
 | :---- | ---------- | :----- |
@@ -107,7 +117,7 @@ Widget build(BuildContext context) {
 
 ## Swatch interface
 
-It represents a collection of related colors, such as the rainbow colors, shades
+It represents a collection of related colors — the rainbow colors, shades
 of grey, etc.
 
 Its single property `colors` retrieves several colors at once as an
@@ -117,12 +127,15 @@ For example, the statement `Greys().colors` retrieves ten shades of grey as
 defined by the Material Design standard; the higher the index, the darker the
 color.
 
-For a complete list of colors with detailed information — hex codes, indexes,
-opacity, etc. —:
+For a complete list of color swatches:
 
 - [swatches](https://pub.dev/documentation/eo_color/latest/swatches/swatches-library.html)
 
 ## Swatch in action
+
+The code below is a fully functional example of using of the _Swatch_ interface
+effectively. It creates a rectangle widget filled with a color gradient provided
+by the _swatch_ instance.
 
 ```dart
 import 'package:eo_color/swatches.dart';
@@ -165,17 +178,21 @@ producing smooth color transitions.
 
 While the `Swatch` interface retrieves an `iterable<Colors>` object, subclasses
 of `Gradients` retrieves a `List<Colors>`, which makes them better suited for
-dealing with color gradient APIs — these APIs almost always expects as input a
-`List<Color>` object.
+dealing with the Flutter's gradient APIs — these APIs almost always expects a
+`List<Color>` object as parameter instead of an `Iterable<Color>` object.
 
 An example of a `Gradient` implementation is the abstract class `GradientImmu`
 which retrieves immutable `List<Colors>` objects.
 
+For a complete list of gradients:
+
+- [gradient](https://pub.dev/documentation/eo_color/latest/gradients/gradients-library.html)
+
 ## Demo application
 
-The demo application provides a fully working example, focused on
-demonstrating exactly three color palettes in action - BlueGrey, Grey, and
-Brown. You can take the code in this demo and experiment with it.
+The demo application provides a fully working example, focused on demonstrating
+exactly three color palettes in action — BlueGrey, Grey, and Brown. You can take
+the code in this demo and experiment with it.
 
 To run the demo application:
 
