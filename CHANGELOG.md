@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- improve some sentences and correct typos in the README file.
+
 ## [1.1.3] - 2021-06-28
 
 ## [1.1.2] - 2021-06-28
@@ -15,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - fix typos and add minor improvements to README —
   [89](https://github.com/dartoos-dev/eo_color/issues/89).
-=======
+
 ## [1.1.1] - 2021-06-27
 
 ### Fixed
