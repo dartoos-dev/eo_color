@@ -29,7 +29,7 @@ A key benefit of **EO-Color** is to improve the source code readability and
 maintainability by providing declarative interfaces.
 
 The use of **obscure numeric indexes** such as 100, 200...800, 900 to select a
-shade of a colour has been replaced by a more user-friendly approach: the use of
+shade of a color has been replaced by a more user-friendly approach: the use of
 **adverbs** (ultra, very, bit, etc.) and **adjectives** (light, dark, etc.).
 
 For example, to get a light shade of grey, simply **declare** `Grey.light()`;
