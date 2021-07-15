@@ -28,12 +28,12 @@ It is intended to be used as:
 A key benefit of **EO-Color** is to improve the source code readability and
 maintainability by providing declarative interfaces.
 
-The use of **obscure numeric indexes** such as `100,200…800,900` to select a
-shade of a color has been replaced by a more friendly approach: the use of
+The use of **obscure numeric indexes** such as 100, 200...800, 900 to select a
+shade of a colour has been replaced by a more user-friendly approach: the use of
 **adverbs** (ultra, very, bit, etc.) and **adjectives** (light, dark, etc.).
 
 For example, to get a light shade of grey, simply **declare** `Grey.light()`;
-for a darker one, `Grey.dark()`.
+for a darker shade, `Grey.dark()`.
 
 ## Contents
 
@@ -49,10 +49,9 @@ for a darker one, `Grey.dark()`.
 
 ## Getting Started
 
-Like any object-oriented package, this one utilizes interfaces to define
-concepts such as color palette, color swatch, and color gradient. Therefore, it
-is no surprise that the three core interfaces are `Palette`, `Swatch`, and
-`Gradient`.
+Like any other object-oriented package, this one uses interfaces to define
+concepts such as color palette, color swatch and color gradient. So it is no
+surprise that the three core interfaces are `Palette`, `Swatch`, and `Gradient`.
 
 ## Palette interface
 
@@ -82,7 +81,7 @@ Widget build(BuildContext context) {
 }
 ```
 
-All Material Design colors — and related accent colors — have been implemented.
+All Material Design colors — along with their respective accent-colors — have been implemented.
 
 For a complete list of colors or more detailed information about any color (hex
 codes, indexes, opacity, etc.):
@@ -91,8 +90,8 @@ codes, indexes, opacity, etc.):
 
 ## Numeric indexes vs. Named constructors
 
-The table below contains the relationship between Material Design indexes
-and named constructors of the color classes.
+The table below contains the relationship between the Material Design indices
+(100, 200...800, 900) and the named constructors of the color classes.
 
 - **Note:**
   - The **"Normal"** column refers to classes that represent unaccented colors,
@@ -127,12 +126,9 @@ Its single property `colors` retrieves several colors at once as an
 `Iterable<Color>` object.
 
 Except for the _White_ and _Black_ classes, there is a corresponding "plural"
-class for each color class - accent colors included - that implements the
-_Swatch_ interface. For example, the _Greys_ class represents 10 shades of grey
-— as defined by the Material Design standard.
-
-In this way, the declaration `Greys().colors` retrieves 10 shades of grey; the
-higher the index, the darker the color.
+class for each color class — accent colors included — that implements the
+_Swatch_ interface. For example, the declaration `Greys().colors` will retrieve
+10 shades of grey; the higher the index, the darker the color.
 
 For a red color gradient:
 
