@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- rearrangement of README's content —
+  [97](https://github.com/dartoos-dev/eo_color/issues/97).
+
 ## [1.1.5] - 2021-07-15
 
 ### Changed
@@ -35,7 +40,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix table of contents links in README
 
 ## [1.1.0] - 2021-06-27
-
 
 ### Added
 

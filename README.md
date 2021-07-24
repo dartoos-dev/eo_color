@@ -11,9 +11,21 @@ alt="EO-Color logo" width="112" height="96"/>
 
 [![build](https://github.com/dartoos-dev/eo_color/actions/workflows/build.yml/badge.svg)](https://github.com/dartoos-dev/eo_color/actions/)
 [![codecov](https://codecov.io/gh/dartoos-dev/eo_color/branch/master/graph/badge.svg)](https://codecov.io/gh/dartoos-dev/eo_color)
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/rafamizes/eo_color)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/rafamizes/eo_color)](https://www.codefactor.io/repository/github/rafamizes/eo_color)
 [![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
 [![Hits-of-Code](https://hitsofcode.com/github/dartoos-dev/eo_color?branch=master)](https://hitsofcode.com/github/dartoos-dev/eo_color/view?branch=master)
+
+## Contents
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+- [Palette interface](#palette-interface)
+- [Numeric indexes X Named constructors](#numeric-indexes-vs-named-constructors)
+- [Swatch interface](#swatch-interface)
+- [Swatch in action](#swatch-in-action)
+- [Gradient interface](#gradient-interface)
+- [Demo application](#demo-application)
+- [References](#references)
 
 ## Overview
 
@@ -28,24 +40,12 @@ It is intended to be used as:
 A key benefit of **EO-Color** is to improve the source code readability and
 maintainability by providing declarative interfaces.
 
-The use of **obscure numeric indexes** such as 100, 200...800, 900 to select a
+The use of **obscure numeric indexes** such as 100, 200…800, 900 to select a
 shade of a color has been replaced by a more user-friendly approach: the use of
 **adverbs** (ultra, very, bit, etc.) and **adjectives** (light, dark, etc.).
 
 For example, to get a light shade of grey, simply **declare** `Grey.light()`;
-for a darker shade, `Grey.dark()`.
-
-## Contents
-
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-- [Palette interface](#palette-interface)
-- [Numeric indexes X Named constructors](#numeric-indexes-vs-named-constructors)
-- [Swatch interface](#swatch-interface)
-- [Swatch in action](#swatch-in-action)
-- [Gradient interface](#gradient-interface)
-- [Demo application](#demo-application)
-- [References](#references)
+for a darker shade, declare `Grey.dark()`.
 
 ## Getting Started
 
@@ -61,8 +61,8 @@ Typically, subclasses of the _Palette_ interface provide named constructors in
 which the desired color is picked to be retrieved afterwards via the `color`
 property.
 
-For example, the command `Blue()` retrieves the primary shade of blue and is
-equivalent to the Flutter's cryptic command `Colors.blue.shade500`;
+For example, the command `Blue()` retrieves the primary shade of the blue color
+and is equivalent to Flutter's cryptic command `Colors.blue.shade500`;
 `BlueAccent()` ≡ `Colors.blueAccent.shade50`; `Blue.veryDark()` ≡
 `Colors.grey.shade900`; and so on.
 
@@ -75,30 +75,29 @@ widget.
 /// Builds a bluish container.
 @override
 Widget build(BuildContext context) {
-  return Container(
-    color: Blue().color,
-  );
+  return Container(color: const Blue().color);
 }
 ```
 
-All Material Design colors — along with their respective accent-colors — have been implemented.
+All Material Design colors — along with their respective accent-colors — have
+been implemented.
 
-For a complete list of colors or more detailed information about any color (hex
-codes, indexes, opacity, etc.):
+For a complete list of colors with detailed information (hex codes, indexes,
+opacity, etc.):
 
 - [color palettes](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
 
 ## Numeric indexes vs. Named constructors
 
 The table below contains the relationship between the Material Design indices
-(100, 200...800, 900) and the named constructors of the color classes.
+(100, 200…800, 900) and the named constructors of the color classes.
 
 - **Note:**
   - The **"Normal"** column refers to classes that represent unaccented colors,
     such as the _Amber_, _Green_ or _Red_ classes.
   - The **"Accent"** column refers to classes that represent accent colors, such
     as the _AmberAccent_, _GreenAccent_ or _RedAccent_ classes.
-  - **"()"** is the default constructor, which in turn represents a primary
+  - **()** is the default constructor, which in turn represents a primary
     color shade.
 
 | Index | Normal     | Accent |
@@ -125,10 +124,10 @@ It represents a collection of related colors. For example:
 Its single property `colors` retrieves several colors at once as an
 `Iterable<Color>` object.
 
-Except for the _White_ and _Black_ classes, there is a corresponding "plural"
-class for each color class — accent colors included — that implements the
-_Swatch_ interface. For example, the declaration `Greys().colors` will retrieve
-10 shades of grey; the higher the index, the darker the color.
+Except for the _White_ and _Black_ classes, there is always a corresponding
+"plural" class for each color class — accent colors included — that implements
+the _Swatch_ interface. For example, the declaration `Greys().colors` will
+retrieve 10 shades of grey; the higher the index, the darker the color.
 
 For a red color gradient:
 
@@ -187,8 +186,8 @@ producing smooth color transitions.
 
 While the `Swatch` interface retrieves an `iterable<Colors>` object, subclasses
 of `Gradients` retrieves a `List<Colors>`, which makes them better suited for
-dealing with the Flutter's gradient APIs — these APIs almost always expects a
-`List<Color>` object as parameter instead of an `Iterable<Color>` object.
+dealing with Flutter's gradient APIs — these APIs almost always expects a
+`List<Color>` object as a parameter instead of an `Iterable<Color>` object.
 
 An example of a `Gradient` implementation is the abstract class `GradientImmu`,
 which retrieves immutable `List<Colors>` objects.
