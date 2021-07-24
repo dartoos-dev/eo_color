@@ -34,7 +34,7 @@ Material Design color palettes, as well as a color framework.
 
 It is intended to be used as:
 
-- an alternative to the Flutter's built-in colors
+- an alternative to Flutter's built-in colors
 - a base framework for more specific color packages
 
 A key benefit of **EO-Color** is to improve the source code readability and
@@ -50,8 +50,8 @@ for a darker shade, declare `Grey.dark()`.
 ## Getting Started
 
 Like any other object-oriented package, this one uses interfaces to define
-concepts such as color palette, color swatch and color gradient. So it is no
-surprise that the three core interfaces are `Palette`, `Swatch`, and `Gradient`.
+concepts such as color palette, color swatch and color gradient. So the three
+core interfaces are `Palette`, `Swatch`, and `Gradient`.
 
 ## Palette interface
 
@@ -61,13 +61,12 @@ Typically, subclasses of the _Palette_ interface provide named constructors in
 which the desired color is picked to be retrieved afterwards via the `color`
 property.
 
-For example, the command `Blue()` retrieves the primary shade of the blue color
-and is equivalent to Flutter's cryptic command `Colors.blue.shade500`;
-`BlueAccent()` ≡ `Colors.blueAccent.shade50`; `Blue.veryDark()` ≡
-`Colors.grey.shade900`; and so on.
+For example, the command `Blue()` retrieves the primary shade of the Material
+Design blue color, being equivalent to Flutter's cryptic command
+`Colors.blue.shade500`. Likewise `BlueAccent()` ≡ `Colors.blueAccent.shade50`;
+`Blue.veryDark()` ≡ `Colors.grey.shade900`; and so on.
 
-The code snippet below demonstrates how to build a bluish Flutter Container
-widget.
+The code below demonstrates how to build a bluish Flutter Container.
 
 **Code snippet:**
 
@@ -83,9 +82,9 @@ All Material Design colors — along with their respective accent-colors — hav
 been implemented.
 
 For a complete list of colors with detailed information (hex codes, indexes,
-opacity, etc.):
+opacity, etc.), see:
 
-- [color palettes](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
+- [color-palettes-library](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
 
 ## Numeric indexes vs. Named constructors
 
@@ -115,11 +114,11 @@ The table below contains the relationship between the Material Design indices
 
 ## Swatch interface
 
-It represents a collection of related colors. For example:
+It represents a collection of related colors such as:
 
-- shades of grey
-- the color gradient of a brand
-- a user's selected colors
+- shades of grey;
+- the color gradient of a brand;
+- a user's preferred colors.
 
 Its single property `colors` retrieves several colors at once as an
 `Iterable<Color>` object.
