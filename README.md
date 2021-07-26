@@ -51,7 +51,7 @@ For shades of grey lighter than the primary shade: `Grey.bitLighter()`,
 `Grey.lighter()`, `Grey.light()`, `Grey.veryLight()`, or `Grey.ultraLight()` for
 the lightest shade of grey.
 
-For shades of grey darker than the primary shade:: `Grey.bitDarker()`, `Grey.darker()`,
+For shades of grey darker than the primary shade: `Grey.bitDarker()`, `Grey.darker()`,
 `Grey.dark()`, or `Grey.veryDark()` for the darkest shade.
 
 ## Getting Started
