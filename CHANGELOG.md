@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- improvement in README's Palette section —
+  [101](https://github.com/dartoos-dev/eo_color/issues/101).
+
 ## [1.1.6] - 2021-07-24
 
 ### Changed
