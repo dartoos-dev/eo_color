@@ -57,8 +57,8 @@ or `Grey.darkest()` for the darkest shade.
 ## Getting Started
 
 Like any other object-oriented package, this one uses interfaces to define
-concepts such as color palette, color swatch and color gradient. So it is no
-surprise that the three core interfaces are `Palette`, `Swatch`, and `Gradient`.
+concepts such as color palette, color swatch and color gradient. So the three
+core interfaces are `Palette`, `Swatch`, and `Gradient`.
 
 ## Palette interface
 
@@ -67,6 +67,7 @@ It represents color palettes from which a color can be selected.
 Typically, subclasses of the _Palette_ interface provide named constructors in
 which the desired color is selected to be retrieved afterwards via the `color`
 property.
+
 
 For example, the `Blue()` command retrieves the primary shade of the Material
 Design blue and is equivalent to the cryptic Flutter command
@@ -91,9 +92,9 @@ All Material Design colors — along with their respective accent-colors — hav
 been implemented.
 
 For a complete list of colors with detailed information (hex codes, indexes,
-opacity, etc.):
+opacity, etc.), see:
 
-- [color palettes](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
+- [color-palettes-library](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
 
 ## Numeric indexes vs. Named constructors
 
@@ -123,11 +124,11 @@ The table below contains the relationship between the Material Design indices
 
 ## Swatch interface
 
-It represents a collection of related colors. For example:
+It represents a collection of related colors such as:
 
-- shades of grey
-- the color gradient of a brand
-- a user's selected colors
+- shades of grey;
+- the color gradient of a brand;
+- a user's preferred colors.
 
 Its single property `colors` retrieves several colors at once as an
 `Iterable<Color>` object.
