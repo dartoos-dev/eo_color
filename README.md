@@ -30,7 +30,7 @@ alt="EO-Color logo" width="112" height="96"/>
 ## Overview
 
 **EO-Color** is an **E**legant, **O**bject-oriented implementation of the
-Material Design color palettes, as well as a color framework.
+Material Design color palettes and swatches, as well as a color framework.
 
 It is intended to be used as:
 
@@ -44,8 +44,15 @@ The use of **obscure numeric indexes** such as 100, 200…800, 900 to select a
 shade of a color has been replaced by a more user-friendly approach: the use of
 **adverbs** (ultra, very, bit, etc.) and **adjectives** (light, dark, etc.).
 
-For example, to get a light shade of grey, simply **declare** `Grey.light()`;
-for a darker shade, declare `Grey.dark()`.
+For example, to get the primary shade of the Material Design grey color, simply
+**declare** `Grey()`.
+
+For shades of grey lighter than the primary shade: `Grey.bitLighter()`,
+`Grey.lighter()`, `Grey.light()`, `Grey.veryLight()`, or `Grey.ultraLight()` for
+the lightest shade of grey.
+
+For darker shades of grey: `Grey.bitDarker()`, `Grey.darker()`, `Grey.dark()`,
+or `Grey.darkest()` for the darkest shade.
 
 ## Getting Started
 
@@ -55,18 +62,21 @@ core interfaces are `Palette`, `Swatch`, and `Gradient`.
 
 ## Palette interface
 
-It represents color palettes from which a color can be picked.
+It represents color palettes from which a color can be selected.
 
 Typically, subclasses of the _Palette_ interface provide named constructors in
-which the desired color is picked to be retrieved afterwards via the `color`
+which the desired color is selected to be retrieved afterwards via the `color`
 property.
 
-For example, the command `Blue()` retrieves the primary shade of the Material
-Design blue color, being equivalent to Flutter's cryptic command
-`Colors.blue.shade500`. Likewise `BlueAccent()` ≡ `Colors.blueAccent.shade50`;
-`Blue.veryDark()` ≡ `Colors.grey.shade900`; and so on.
 
-The code below demonstrates how to build a bluish Flutter Container.
+For example, the `Blue()` command retrieves the primary shade of the Material
+Design blue and is equivalent to the cryptic Flutter command
+`Colors.blue.shade500`. Likewise, the named constructor `Blue.veryLight()` is
+equivalent to `Colors.blue.shade50`; `Blue.veryDark()` is equivalent to
+`Colors.grey.shade900`; and so on.
+
+The code snippet below demonstrates how to build a bluish Flutter Container
+widget using the `Blue` class.
 
 **Code snippet:**
 
