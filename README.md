@@ -44,14 +44,13 @@ The use of **obscure numeric indexes** such as 100, 200…800, 900 to select a
 shade of a color has been replaced by a more user-friendly approach: the use of
 **adverbs** (ultra, very, bit, etc.) and **adjectives** (light, dark, etc.).
 
-For example, to get the primary shade of the Material Design grey color, simply
-**declare** `Grey()`.
+For example, to get the primary shade of grey, simply **declare** `Grey()`.
 
-For shades of grey lighter than the primary shade: `Grey.bitLighter()`,
+For shades of grey lighter than the primary one: `Grey.bitLighter()`,
 `Grey.lighter()`, `Grey.light()`, `Grey.veryLight()`, or `Grey.ultraLight()` for
 the lightest shade of grey.
 
-For shades of grey darker than the primary shade: `Grey.bitDarker()`, `Grey.darker()`,
+For shades of grey darker than the primary one: `Grey.bitDarker()`, `Grey.darker()`,
 `Grey.dark()`, or `Grey.veryDark()` for the darkest shade.
 
 ## Getting Started
@@ -64,15 +63,13 @@ three main interfaces are `Palette`, `Swatch`, and `Gradient`.
 
 It represents color palettes from which a color can be selected.
 
-Typically, subclasses of the _Palette_ interface provide named constructors in
-which the desired color is selected to be retrieved afterwards via the `color`
-property.
+Typically, subclasses of the _Palette_ interface provide named constructors by
+which the desired color is selected — to be retrieved later via the `color` property.
 
-For example, the `Blue()` command retrieves the primary shade of the Material
-Design blue and is equivalent to the cryptic Flutter command
-`Colors.blue.shade500`. Likewise, the named constructor `Blue.veryLight()` is
-equivalent to `Colors.blue.shade50`; `Blue.veryDark()` is equivalent to
-`Colors.grey.shade900`; and so on.
+For instance, the command `Blue()` retrieves the primary shade of blue and is equivalent
+to the Flutter command `Colors.blue.shade500`. Similarly, the command `Blue.veryLight()`
+is equivalent to `Colors.blue.shade50`; `Blue.veryDark()`, to `Colors.grey.shade900`;
+and so on.
 
 The code snippet below demonstrates how to build a bluish Flutter Container
 widget using the `Blue` class.
@@ -101,12 +98,12 @@ The table below contains the relationship between the Material Design indices
 (100, 200…800, 900) and the named constructors of the color classes.
 
 - **Note:**
-  - The **"Normal"** column refers to classes that represent unaccented colors,
+  - The **"Normal"** column refers to classes that represent non-accent colors
     such as the _Amber_, _Green_ or _Red_ classes.
-  - The **"Accent"** column refers to classes that represent accent colors, such
+  - The **"Accent"** column refers to classes that represent accent colors such
     as the _AmberAccent_, _GreenAccent_ or _RedAccent_ classes.
-  - **()** is the default constructor, which in turn represents a primary
-    color shade.
+  - **()** is the default constructor, which in turn represents the primary shade
+    of a color.
 
 | Index | Normal     | Accent |
 | :---- | ---------- | :----- |
