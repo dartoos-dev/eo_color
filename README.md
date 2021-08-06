@@ -34,8 +34,8 @@ Material Design color palettes and swatches, as well as a color framework.
 
 It is intended to be used as:
 
-- an alternative to Flutter's built-in colors
-- a base framework for more specific color packages
+- an alternative to Flutter's built-in colors.
+- a base framework for more specific color packages.
 
 A key benefit of **EO-Color** is to improve the source code readability and
 maintainability by providing declarative interfaces.
@@ -53,8 +53,8 @@ Likewise, there are commands for retrieving lighter and darker shades.
 - shades of grey darker than the primary shade: `Grey.bitDarker()`,
   `Grey.darker()`, `Grey.dark()`, or `Grey.veryDark()` for the darkest shade.
 
-With the exception of black and white, the same command patterns (lighter,
-lighter, darker, etc.) also apply to the other colors.
+With the exception of black and white, the same command patterns (light,
+lighter, dark, veryDark, etc.) also apply to the other colors.
 
 ## Getting Started
 
