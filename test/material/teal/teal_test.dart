@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:eo_color/eo_color.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 /// [teal](https://api.flutter.dev/flutter/material/Colors/teal-constant.html)

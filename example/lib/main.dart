@@ -1,12 +1,15 @@
-import 'package:flutter/material.dart';
 import 'package:eo_color/eo_color.dart';
+import 'package:flutter/material.dart';
+
 import 'contrast.dart';
 
 void main() {
   runApp(const ExampleApp());
 }
 
+/// Root widget.
 class ExampleApp extends StatelessWidget {
+  /// Ctor.
   const ExampleApp({Key? key}) : super(key: key);
 
   @override
@@ -21,6 +24,7 @@ class ExampleApp extends StatelessWidget {
 
 /// Showcase widget of color swatches.
 class Showcase extends StatelessWidget {
+  /// Ctor.
   const Showcase({required String title, Key? key})
       : _title = title,
         super(key: key);
