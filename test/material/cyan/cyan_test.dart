@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:eo_color/eo_color.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 /// [cyan](https://api.flutter.dev/flutter/material/Colors/cyan-constant.html)

@@ -34,8 +34,8 @@ Material Design color palettes and swatches, as well as a color framework.
 
 It is intended to be used as:
 
-- an alternative to Flutter's built-in colors
-- a base framework for more specific color packages
+- an alternative to Flutter's built-in colors.
+- a base framework for more specific color packages.
 
 A key benefit of **EO-Color** is to improve the source code readability and
 maintainability by providing declarative interfaces.
@@ -45,13 +45,16 @@ shade of a color has been replaced by a more user-friendly approach: the use of
 **adverbs** (ultra, very, bit, etc.) and **adjectives** (light, dark, etc.).
 
 For example, to get the primary shade of grey, simply **declare** `Grey()`.
+Likewise, there are commands for retrieving lighter and darker shades.
 
-For shades of grey lighter than the primary one: `Grey.bitLighter()`,
-`Grey.lighter()`, `Grey.light()`, `Grey.veryLight()`, or `Grey.ultraLight()` for
-the lightest shade of grey.
+- shades of grey lighter than the primary shade: `Grey.bitLighter()`,
+  `Grey.lighter()`, `Grey.light()`, `Grey.veryLight()`, or `Grey.ultraLight()` for
+  the lightest shade of grey.
+- shades of grey darker than the primary shade: `Grey.bitDarker()`,
+  `Grey.darker()`, `Grey.dark()`, or `Grey.veryDark()` for the darkest shade.
 
-For shades of grey darker than the primary one: `Grey.bitDarker()`, `Grey.darker()`,
-`Grey.dark()`, or `Grey.veryDark()` for the darkest shade.
+With the exception of black and white, the same command patterns (light,
+lighter, dark, veryDark, etc.) also apply to the other colors.
 
 ## Getting Started
 
@@ -92,7 +95,7 @@ opacity, etc.), see:
 
 - [color-palettes-library](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
 
-## Numeric indexes vs. Named constructors
+### Numeric indexes vs. Named constructors
 
 The table below contains the relationship between the Material Design indices
 (100, 200…800, 900) and the named constructors of the color classes.
@@ -145,7 +148,7 @@ For a complete list of color swatches:
 
 - [swatches](https://pub.dev/documentation/eo_color/latest/swatches/swatches-library.html)
 
-## Swatch in action
+### Swatch in action
 
 The following code provides a fully working example. It creates a rectangle
 widget filled with a color gradient provided by the _swatch_ instance.
