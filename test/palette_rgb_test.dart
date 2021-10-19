@@ -17,8 +17,10 @@ void main() {
       expect(const TestPalette.black87().color, Colors.black87);
     });
     test('default constructor', () {
-      expect(const TestPalette(alpha: 0xFF, rgb: 0xFFFFFF).color,
-          const Color(0xFFFFFFFF));
+      expect(
+        const TestPalette(alpha: 0xFF, rgb: 0xFFFFFF).color,
+        const Color(0xFFFFFFFF),
+      );
     });
     test('call method', () {
       const testPalette = TestPalette.funnyHex();

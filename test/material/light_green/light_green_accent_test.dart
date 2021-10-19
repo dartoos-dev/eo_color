@@ -9,16 +9,22 @@ void main() {
       expect(const LightGreenAccent().color, Colors.lightGreenAccent.shade200);
     });
     test('light', () {
-      expect(const LightGreenAccent.light().color,
-          Colors.lightGreenAccent.shade100);
+      expect(
+        const LightGreenAccent.light().color,
+        Colors.lightGreenAccent.shade100,
+      );
     });
     test('darker', () {
-      expect(const LightGreenAccent.darker().color,
-          Colors.lightGreenAccent.shade400);
+      expect(
+        const LightGreenAccent.darker().color,
+        Colors.lightGreenAccent.shade400,
+      );
     });
     test('dark', () {
-      expect(const LightGreenAccent.dark().color,
-          Colors.lightGreenAccent.shade700);
+      expect(
+        const LightGreenAccent.dark().color,
+        Colors.lightGreenAccent.shade700,
+      );
     });
     test('call method', () {
       const lightGreenAccent = LightGreenAccent();
