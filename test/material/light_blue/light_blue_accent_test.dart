@@ -10,15 +10,21 @@ void main() {
     });
     test('light', () {
       expect(
-          const LightBlueAccent.light().color, Colors.lightBlueAccent.shade100);
+        const LightBlueAccent.light().color,
+        Colors.lightBlueAccent.shade100,
+      );
     });
     test('darker', () {
-      expect(const LightBlueAccent.darker().color,
-          Colors.lightBlueAccent.shade400);
+      expect(
+        const LightBlueAccent.darker().color,
+        Colors.lightBlueAccent.shade400,
+      );
     });
     test('dark', () {
       expect(
-          const LightBlueAccent.dark().color, Colors.lightBlueAccent.shade700);
+        const LightBlueAccent.dark().color,
+        Colors.lightBlueAccent.shade700,
+      );
     });
     test('call method', () {
       const lightBlueAccent = LightBlueAccent();
