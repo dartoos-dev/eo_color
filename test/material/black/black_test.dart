@@ -26,9 +26,5 @@ void main() {
     test('12% opacity', () {
       expect(const Black.opacity12().color, Colors.black12);
     });
-    test('call method', () {
-      const black = Black();
-      expect(black(), black.color);
-    });
   });
 }

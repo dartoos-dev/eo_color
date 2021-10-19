@@ -25,7 +25,6 @@ void main() {
     test('single', () {
       const singleElem = GradTest.single();
       expect(singleElem.colors.length, 1);
-      expect(singleElem().first, aGrey.first.color);
     });
     test('many', () {
       const manyElems = GradTest.many();

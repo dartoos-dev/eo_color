@@ -34,7 +34,4 @@ abstract class PaletteRGB implements Palette {
   /// The rgb color.
   @override
   Color get color => Color(_value);
-
-  /// Convenience overloading; forwards to [color].
-  Color call() => color;
 }

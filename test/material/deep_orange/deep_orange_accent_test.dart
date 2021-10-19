@@ -26,9 +26,5 @@ void main() {
         Colors.deepOrangeAccent.shade700,
       );
     });
-    test('call method', () {
-      const deepOrangeAccent = DeepOrangeAccent();
-      expect(deepOrangeAccent(), deepOrangeAccent.color);
-    });
   });
 }

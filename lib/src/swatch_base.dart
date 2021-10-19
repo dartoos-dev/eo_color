@@ -16,7 +16,4 @@ abstract class SwatchBase implements Swatch {
   /// A new lazy [Iterable] of [Color].
   @override
   Iterable<Color> get colors => _palettes.map((palette) => palette.color);
-
-  /// Forwards to [colors].
-  Iterable<Color> call() => colors;
 }

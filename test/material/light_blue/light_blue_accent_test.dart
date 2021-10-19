@@ -26,9 +26,5 @@ void main() {
         Colors.lightBlueAccent.shade700,
       );
     });
-    test('call method', () {
-      const lightBlueAccent = LightBlueAccent();
-      expect(lightBlueAccent(), lightBlueAccent.color);
-    });
   });
 }

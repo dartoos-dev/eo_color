@@ -26,9 +26,5 @@ void main() {
         Colors.deepPurpleAccent.shade700,
       );
     });
-    test('call method', () {
-      const deepPurpleAccent = DeepPurpleAccent();
-      expect(deepPurpleAccent(), deepPurpleAccent.color);
-    });
   });
 }

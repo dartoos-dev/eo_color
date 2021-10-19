@@ -17,9 +17,5 @@ void main() {
     test('dark', () {
       expect(const CyanAccent.dark().color, Colors.cyanAccent.shade700);
     });
-    test('call method', () {
-      const cyanAccent = CyanAccent();
-      expect(cyanAccent(), cyanAccent.color);
-    });
   });
 }
