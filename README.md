@@ -7,7 +7,7 @@ alt="EO-Color logo" width="112" height="96"/>
 
 [![pub](https://img.shields.io/pub/v/eo_color)](https://pub.dev/packages/eo_color)
 [![license](https://img.shields.io/badge/license-mit-green.svg)](https://github.com/dartoos-dev/eo_color/blob/master/LICENSE)
-[![PDD status](https://www.0pdd.com/svg?name=dartoos-dev/eo_color)](https://www.0pdd.com/p?name=dartoos-dev/eo_color)
+<!-- [![PDD status](https://www.0pdd.com/svg?name=dartoos-dev/eo_color)](https://www.0pdd.com/p?name=dartoos-dev/eo_color) -->
 
 [![build](https://github.com/dartoos-dev/eo_color/actions/workflows/build.yml/badge.svg)](https://github.com/dartoos-dev/eo_color/actions/)
 [![codecov](https://codecov.io/gh/dartoos-dev/eo_color/branch/master/graph/badge.svg)](https://codecov.io/gh/dartoos-dev/eo_color)
@@ -53,8 +53,8 @@ Likewise, there are commands for retrieving lighter and darker shades.
 - shades of grey darker than the primary shade: `Grey.bitDarker()`,
   `Grey.darker()`, `Grey.dark()`, or `Grey.veryDark()` for the darkest shade.
 
-With the exception of black and white, the same command patterns (light,
-lighter, dark, veryDark, etc.) also apply to the other colors.
+With the exception of the colors black and white, the same command patterns (light,
+lighter, dark, very dark, etc.) also apply to all other colors.
 
 ## Getting Started
 
@@ -70,12 +70,11 @@ Typically, subclasses of the _Palette_ interface provide named constructors by
 which the desired color is selected — to be retrieved later via the `color` property.
 
 For instance, the command `Blue()` retrieves the primary shade of blue and is equivalent
-to the Flutter command `Colors.blue.shade500`. Similarly, the command `Blue.veryLight()`
-is equivalent to `Colors.blue.shade50`; `Blue.veryDark()`, to `Colors.grey.shade900`;
-and so on.
+to the Flutter command `Colors.blue.shade500`. Similarly, `Blue.veryLight()` is equivalent
+to `Colors.blue.shade50`; `Blue.veryDark()`, to `Colors.grey.shade900`; and so on.
 
 The code snippet below demonstrates how to build a bluish Flutter Container
-widget using the `Blue` class.
+widget using the `Blue` color class.
 
 **Code snippet:**
 
@@ -97,16 +96,16 @@ opacity, etc.), see:
 
 ### Numeric indexes vs. Named constructors
 
-The table below contains the relationship between the Material Design indices
+The table below contains the relationship between the Material Design indexes
 (100, 200…800, 900) and the named constructors of the color classes.
 
 - **Note:**
   - The **"Normal"** column refers to classes that represent non-accent colors
-    such as the _Amber_, _Green_ or _Red_ classes.
-  - The **"Accent"** column refers to classes that represent accent colors such
-    as the _AmberAccent_, _GreenAccent_ or _RedAccent_ classes.
-  - **()** is the default constructor, which in turn represents the primary shade
-    of a color.
+    such as _Amber_, _Green_, _Red_, etc.
+  - On the other hande, the **"Accent"** column refers to classes that represent
+    accent colors such as _AmberAccent_, _GreenAccent_, _RedAccent_, and so on.
+  - Finally, **"()"** refers to the default constructor, which in turn represents
+    the primary shade of the color class it belongs to.
 
 | Index | Normal     | Accent |
 | :---- | ---------- | :----- |
@@ -134,8 +133,8 @@ Its single property `colors` retrieves several colors at once as an
 
 Except for the _White_ and _Black_ classes, there is always a corresponding
 "plural" class for each color class — accent colors included — that implements
-the _Swatch_ interface. For example, the declaration `Greys().colors` will
-retrieve 10 shades of grey; the higher the index, the darker the color.
+the _Swatch_ interface. For example, the declaration `Greys().colors` retrieves
+10 shades of grey; the higher the index, the darker the color.
 
 For a red color gradient:
 
@@ -207,7 +206,7 @@ For a complete list of gradients:
 ## Demo application
 
 The demo application provides a fully working example, focused on demonstrating
-exactly three color palettes in action — BlueGrey, Grey, and Brown. You can take
+exactly three color palettes in action: BlueGrey, Grey, and Brown. You can take
 the code in this demo and experiment with it.
 
 To run the demo application:
