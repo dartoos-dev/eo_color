@@ -17,9 +17,5 @@ void main() {
     test('dark', () {
       expect(const PurpleAccent.dark().color, Colors.purpleAccent.shade700);
     });
-    test('call method', () {
-      const purpleAccent = PurpleAccent();
-      expect(purpleAccent(), purpleAccent.color);
-    });
   });
 }

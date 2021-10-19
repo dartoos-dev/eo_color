@@ -15,8 +15,4 @@ abstract class GradientImmu extends SwatchBase implements Gradient {
   /// An **immutable list** of position-dependent colors — a color gradient.
   @override
   List<Color> get colors => List.unmodifiable(super.colors);
-
-  /// Forwards to [colors].
-  @override
-  List<Color> call() => colors;
 }

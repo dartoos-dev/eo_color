@@ -41,9 +41,5 @@ void main() {
     test('very dark', () {
       expect(const Grey.veryDark().color, Colors.grey.shade900);
     });
-    test('call method', () {
-      const grey = Grey();
-      expect(grey(), grey.color);
-    });
   });
 }

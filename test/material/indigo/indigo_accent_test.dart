@@ -17,9 +17,5 @@ void main() {
     test('dark', () {
       expect(const IndigoAccent.dark().color, Colors.indigoAccent.shade700);
     });
-    test('call method', () {
-      const indigoAccent = IndigoAccent();
-      expect(indigoAccent(), indigoAccent.color);
-    });
   });
 }

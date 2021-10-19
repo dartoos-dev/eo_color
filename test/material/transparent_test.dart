@@ -8,9 +8,5 @@ void main() {
     test('fully transparent (invisible)', () {
       expect(const Transparent().color, Colors.transparent);
     });
-    test('call method', () {
-      const transparent = Transparent();
-      expect(transparent(), transparent.color);
-    });
   });
 }

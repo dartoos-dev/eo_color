@@ -16,6 +16,5 @@ void main() {
 
     const _blackAndWhite = TestSwatch.blackWhite();
     test('colors property', () => check(_blackAndWhite.colors));
-    test('call method', () => check(_blackAndWhite()));
   });
 }

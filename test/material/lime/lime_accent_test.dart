@@ -17,9 +17,5 @@ void main() {
     test('dark', () {
       expect(const LimeAccent.dark().color, Colors.limeAccent.shade700);
     });
-    test('call method', () {
-      const limeAccent = LimeAccent();
-      expect(limeAccent(), limeAccent.color);
-    });
   });
 }

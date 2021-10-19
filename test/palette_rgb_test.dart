@@ -22,9 +22,5 @@ void main() {
         const Color(0xFFFFFFFF),
       );
     });
-    test('call method', () {
-      const testPalette = TestPalette.funnyHex();
-      expect(testPalette(), const Color(0xCAFEBABE));
-    });
   });
 }

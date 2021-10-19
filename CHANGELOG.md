@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- stricter lint rules.
+- improvements in README.
+
+### Removed
+
+- The overloading of the function call operator —
+  [109](https://github.com/dartoos-dev/eo_color/issues/109) **BREAKIN CHANGE**.
+
 ## [1.1.9] - 2021-08-06
 
 ### Changed

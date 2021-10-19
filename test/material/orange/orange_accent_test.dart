@@ -17,9 +17,5 @@ void main() {
     test('dark', () {
       expect(const OrangeAccent.dark().color, Colors.orangeAccent.shade700);
     });
-    test('call method', () {
-      const orangeAccent = OrangeAccent();
-      expect(orangeAccent(), orangeAccent.color);
-    });
   });
 }
