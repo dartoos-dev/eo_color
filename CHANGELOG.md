@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Add
+### Added
 
 - `GradOf` class with the constructors `blueGrey`, `grey`, and `brown`.
 - `GradientSwatch` helper abstract class.
