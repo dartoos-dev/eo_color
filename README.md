@@ -40,34 +40,34 @@ It is intended to be used as:
 A key benefit of **EO-Color** is to improve the source code readability and
 maintainability by providing declarative interfaces.
 
-The use of **obscure numeric indexes** such as 100, 200…800, 900 to select a
+The use of **obscure numeric indexes** such as 100, 200…800, 900 to select the
 shade of a color has been replaced by a more user-friendly approach: the use of
 **adverbs** (ultra, very, bit, etc.) and **adjectives** (light, dark, etc.).
 
 For example, to get the primary shade of grey, simply **declare** `Grey()`.
-Likewise, there are commands for retrieving lighter and darker shades.
+Likewise, there are commands for retrieving shades of grey that are lighter
+or darker than the primary shade.
 
-- shades of grey lighter than the primary shade: `Grey.bitLighter()`,
-  `Grey.lighter()`, `Grey.light()`, `Grey.veryLight()`, or `Grey.ultraLight()` for
-  the lightest shade of grey.
-- shades of grey darker than the primary shade: `Grey.bitDarker()`,
-  `Grey.darker()`, `Grey.dark()`, or `Grey.veryDark()` for the darkest shade.
+- **lighter shades**: `Grey.bitLighter()`, `Grey.lighter()`, `Grey.light()`,
+  `Grey.veryLight()`, or `Grey.ultraLight()` for the lightest shade of grey.
+- **darker shades**: `Grey.bitDarker()`, `Grey.darker()`, `Grey.dark()`, or
+  `Grey.veryDark()` for the darkest shade.
 
 With the exception of the colors black and white, the same command patterns
-(light, lighter, dark, very dark, etc.) also apply to all other colors.
+(light, lighter, dark, etc.) also apply to all other colors.
 
 ## Getting Started
 
 Like any other object-oriented package, this one uses interfaces to define
-concepts such as color palette, color swatch, and color gradient. Therefore, the
-three main interfaces are `Palette`, `Swatch`, and `Gradient`.
+concepts such as color palette, color swatch, and color gradient; t8herefore,
+the three main interfaces are `Palette`, `Swatch`, and `Gradient`.
 
 ## Palette interface
 
 It represents color palettes from which a color can be selected.
 
 Typically, subclasses of the _Palette_ interface provide named constructors by
-which the desired color is selected — to be retrieved later via the `color`
+which the desired color is selected — to be retrieved afterwards using the `color`
 property.
 
 For instance, the command `Blue()` retrieves the primary shade of blue and is
