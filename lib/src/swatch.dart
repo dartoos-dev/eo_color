@@ -6,7 +6,7 @@ import 'dart:ui';
 /// etc.
 abstract class Swatch {
   /// const ctor.
-  const Swatch();
+  const Swatch(); // coverage:ignore-line
 
   /// The colors.
   ///
