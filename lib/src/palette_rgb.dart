@@ -23,13 +23,13 @@ abstract class PaletteRGB implements Palette {
   ///
   /// [opacity] the opacity value; it defaults to 0xFF - fully opaque.
   const PaletteRGB.white({int opacity = 0xFF})
-      : this(alpha: opacity, rgb: 0xFFFFFF);
+      : this(alpha: opacity, rgb: 0xFFFFFF); // coverage:ignore-line
 
   /// Convenience black #000000.
   ///
   /// [opacity] the opacity value; it defaults to 0xFF - fully opaque.
   const PaletteRGB.black({int opacity = 0xFF})
-      : this(alpha: opacity, rgb: 0x000000);
+      : this(alpha: opacity, rgb: 0x000000); // coverage:ignore-line
 
   /// the color's 32 bits.
   final int _value;

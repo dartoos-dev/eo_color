@@ -10,17 +10,17 @@ class GradOf extends GradientSwatch {
   ///
   /// See also: [BlueGreys].
   const GradOf.blueGrey({bool growable = false})
-      : super(const BlueGreys(), growable: growable);
+      : super(const BlueGreys(), growable: growable); // coverage:ignore-line
 
   /// A gradient of ten shades of brown.
   ///
   /// See also: [Browns].
   const GradOf.brown({bool growable = false})
-      : super(const Browns(), growable: growable);
+      : super(const Browns(), growable: growable); // coverage:ignore-line
 
   /// A gradient of ten shades of grey.
   ///
   /// See also: [Greys].
   const GradOf.grey({bool growable = false})
-      : super(const Greys(), growable: growable);
+      : super(const Greys(), growable: growable); // coverage:ignore-line
 }
