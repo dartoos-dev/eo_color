@@ -5,6 +5,9 @@ import 'dart:ui';
 /// A group of related colors such as the colors of the rainbow, shades of grey,
 /// etc.
 abstract class Swatch {
+  /// const ctor.
+  const Swatch();
+
   /// The colors.
   ///
   /// The order of the colors varies between swatches. Some swatches might order

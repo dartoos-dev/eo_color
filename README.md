@@ -194,12 +194,14 @@ region. The colors produced by a gradient vary continuously with position,
 producing smooth color transitions.
 
 While the `Swatch` interface retrieves an `iterable<Colors>` object, subclasses
-of `Gradients` retrieves a `List<Colors>`, which makes them better suited for
+of `Gradient` retrieves a `List<Colors>`, which makes them better suited for
 dealing with Flutter's gradient APIs — these APIs almost always expects a
 `List<Color>` object as a parameter instead of an `Iterable<Color>` object.
 
-An example of a `Gradient` implementation is the abstract class `GradientImmu`,
-which retrieves immutable `List<Colors>` objects.
+For Material Design color gradients, use the `GradOf` class, which in turn
+implements the `Gradient` interface. Another example of a `Gradient`
+implementation is the abstract class `GradientImmu`, which retrieves immutable
+`List<Colors>` objects.
 
 For a complete list of gradients:
 

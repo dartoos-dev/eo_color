@@ -20,26 +20,26 @@ class White extends PaletteRGB {
   const White() : super.white();
 
   /// 70% opacity.
-  const White.opacity70() : super.white(opacity:0xB3);
+  const White.opacity70() : super.white(opacity: 0xB3);
 
   /// 60% opacity.
-  const White.opacity60() : super.white(opacity:0x99);
+  const White.opacity60() : super.white(opacity: 0x99);
 
   /// 54% opacity.
-  const White.opacity54() : super.white(opacity:0x8A);
+  const White.opacity54() : super.white(opacity: 0x8A);
 
   /// 38% opacity.
-  const White.opacity38() : super.white(opacity:0x62);
+  const White.opacity38() : super.white(opacity: 0x62);
 
   /// 30% opacity.
-  const White.opacity30() : super.white(opacity:0x4D);
+  const White.opacity30() : super.white(opacity: 0x4D);
 
   /// 24% opacity.
-  const White.opacity24() : super.white(opacity:0x3D);
+  const White.opacity24() : super.white(opacity: 0x3D);
 
   /// 12% opacity.
-  const White.opacity12() : super.white(opacity:0x1F);
+  const White.opacity12() : super.white(opacity: 0x1F);
 
   /// 10% opacity.
-  const White.opacity10() : super.white(opacity:0x1A);
+  const White.opacity10() : super.white(opacity: 0x1A);
 }

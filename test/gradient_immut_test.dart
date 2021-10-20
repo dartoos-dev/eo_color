@@ -1,4 +1,6 @@
-import 'package:eo_color/eo_color.dart';
+import 'package:eo_color/src/gradient_immut.dart';
+import 'package:eo_color/src/material/grey/grey.dart';
+import 'package:eo_color/src/material/transparent.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 const aGrey = [Grey()];
@@ -10,7 +12,7 @@ const manyGreys = [
   Grey.dark(),
 ];
 
-class GradTest extends GradientImmu {
+class GradTest extends GradientImmut {
   const GradTest.empty() : super(const []);
   const GradTest.single() : super(aGrey);
   const GradTest.many() : super(manyGreys);

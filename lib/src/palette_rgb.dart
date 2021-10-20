@@ -22,12 +22,14 @@ abstract class PaletteRGB implements Palette {
   /// Convenience white #FFFFFF.
   ///
   /// [opacity] the opacity value; it defaults to 0xFF - fully opaque.
-  const PaletteRGB.white({int opacity = 0xFF}) : this(alpha: opacity, rgb: 0xFFFFFF);
+  const PaletteRGB.white({int opacity = 0xFF})
+      : this(alpha: opacity, rgb: 0xFFFFFF);
 
   /// Convenience black #000000.
   ///
   /// [opacity] the opacity value; it defaults to 0xFF - fully opaque.
-  const PaletteRGB.black({int opacity = 0xFF}) : this(alpha: opacity, rgb: 0x000000);
+  const PaletteRGB.black({int opacity = 0xFF})
+      : this(alpha: opacity, rgb: 0x000000);
 
   /// the color's 32 bits.
   final int _value;

@@ -12,6 +12,8 @@ import 'swatch.dart';
 /// See also:
 /// - [color-gradient](https://en.wikipedia.org/wiki/Color_gradient)
 abstract class Gradient implements Swatch {
+  const Gradient();
+
   /// A list of position-dependent colors — a color gradient.
   @override
   List<Color> get colors;
