@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - stricter lint rules.
 - improvements in README.
+- Rename 'o' parameter to 'opacity' in `white` and `black` constructors of the
+  `PaletteRGB` class — **BREAKING CHANGES**.
 
 ### Removed
 

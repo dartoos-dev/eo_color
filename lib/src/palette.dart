@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-/// Color palette from which a color is picked.
+/// Color palette from which a color can be selected.
 abstract class Palette {
-  /// The picked color.
+  /// The selected color.
   Color get color;
 }

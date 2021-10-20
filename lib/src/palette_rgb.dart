@@ -2,12 +2,13 @@ import 'dart:ui';
 
 import 'palette.dart';
 
-/// Palette Color from alpha, red, green and blue.
+/// A Palette Color from alpha, red, green and blue.
 ///
-/// Bits 24-31 are the alpha value (opacity).
-/// Bits 16-23 are the red value.
-/// Bits 8-15 are the green value.
-/// Bits 0-7 are the blue value.
+/// The color value consists of four bytes (32 bits):
+/// - bits 24-31 are the alpha value (opacity).
+/// - bits 16-23 are the red value.
+/// - bits 8–15 are the green value.
+/// - bits 0–7 are the blue value.
 abstract class PaletteRGB implements Palette {
   /// Custom [alpha] and [rgb] values.
   const PaletteRGB({required int alpha, required int rgb})
@@ -20,13 +21,13 @@ abstract class PaletteRGB implements Palette {
 
   /// Convenience white #FFFFFF.
   ///
-  /// [o] opacity value, defaults to 0xFF - fully opaque.
-  const PaletteRGB.white([int o = 0xFF]) : this(alpha: o, rgb: 0xFFFFFF);
+  /// [opacity] the opacity value; it defaults to 0xFF - fully opaque.
+  const PaletteRGB.white({int opacity = 0xFF}) : this(alpha: opacity, rgb: 0xFFFFFF);
 
   /// Convenience black #000000.
   ///
-  /// [o] opacity value, defaults to 0xFF - fully opaque.
-  const PaletteRGB.black([int o = 0xFF]) : this(alpha: o, rgb: 0x000000);
+  /// [opacity] the opacity value; it defaults to 0xFF - fully opaque.
+  const PaletteRGB.black({int opacity = 0xFF}) : this(alpha: opacity, rgb: 0x000000);
 
   /// the color's 32 bits.
   final int _value;
