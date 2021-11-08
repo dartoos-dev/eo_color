@@ -53,25 +53,28 @@ or darker than the primary shade.
 - **darker shades**: `Grey.bitDarker()`, `Grey.darker()`, `Grey.dark()`, or
   `Grey.veryDark()` for the darkest shade.
 
-With the exception of the colors black and white, the same command patterns
-(light, lighter, dark, etc.) also apply to all other colors.
+With the exception of black and white, the same command patterns (light,
+lighter, dark, etc.) also apply to all other
+[colors](https://pub.dev/documentation/eo_color/latest/palettes/palettes-library.html)
 
 ## Getting Started
 
 Like any other object-oriented package, this one uses interfaces to define
-concepts such as color palette, color swatch, and color gradient; t8herefore,
-the three main interfaces are `Palette`, `Swatch`, and `Gradient`.
+concepts such as the color palette, color swatch and color gradient; therefore,
+the three main interfaces are `Palette`, `Swatch` and `Gradient`.
 
 ## Palette interface
 
-It represents color palettes from which a color can be selected.
+The
+[Palette](https://pub.dev/documentation/eo_color/latest/palettes/Palette-class.html)
+interface represents color palettes from which a color can be selected.
 
 Typically, subclasses of the _Palette_ interface provide named constructors by
-which the desired color is selected — to be retrieved afterwards using the `color`
+which the desired color is selected — to be retrieved later using the `color`
 property.
 
-For instance, the command `Blue()` retrieves the primary shade of blue and is
-equivalent to the Flutter command `Colors.blue.shade500`. Similarly,
+For instance, the command `Blue()` retrieves the primary shade of blue, and it
+is equivalent to the Flutter command `Colors.blue.shade500`. Similarly,
 `Blue.veryLight()` is equivalent to `Colors.blue.shade50`; `Blue.veryDark()`, to
 `Colors.grey.shade900`; and so on.
 
@@ -124,7 +127,9 @@ The table below contains the relationship between the Material Design indexes
 
 ## Swatch interface
 
-It represents a collection of related colors such as:
+The
+[Swatch](https://pub.dev/documentation/eo_color/latest/swatches/Swatch-class.html)
+interface represents a collection of related colors such as:
 
 - shades of grey;
 - the color gradient of a brand;
@@ -135,8 +140,8 @@ Its single property `colors` retrieves several colors at once as an
 
 Except for the _White_ and _Black_ classes, there is always a corresponding
 "plural" class for each color class — accent colors included — that implements
-the _Swatch_ interface. For example, the declaration `Greys().colors` retrieves
-10 shades of grey; the higher the index, the darker the color.
+the _Swatch_ interface. For example, the command `Greys().colors` retrieves 10
+shades of grey; the higher the index, the darker the color.
 
 For a red color gradient:
 
@@ -193,19 +198,26 @@ It represents a range of position-dependent colors, usually used to fill a
 region. The colors produced by a gradient vary continuously with position,
 producing smooth color transitions.
 
-While the `Swatch` interface retrieves an `iterable<Colors>` object, subclasses
-of `Gradient` retrieves a `List<Colors>`, which makes them better suited for
-dealing with Flutter's gradient APIs — these APIs almost always expects a
-`List<Color>` object as a parameter instead of an `Iterable<Color>` object.
+While the
+[Swatch](https://pub.dev/documentation/eo_color/latest/swatches/Swatch-class.html)
+interface retrieves an `iterable<Colors>` object, subclasses of
+[Gradient](https://pub.dev/documentation/eo_color/latest/gradients/Gradient-class.html)
+retrieves a `List<Colors>`, which makes them better suited for dealing with
+Flutter's gradient APIs — these APIs almost always expects a `List<Color>`
+object as argument rather than an `Iterable<Color>` object.
 
-For Material Design color gradients, use the `GradOf` class, which in turn
-implements the `Gradient` interface. Another example of a `Gradient`
-implementation is the abstract class `GradientImmu`, which retrieves immutable
-`List<Colors>` objects.
+For Material Design color gradients, use the
+[GradOf](https://pub.dev/documentation/eo_color/latest/gradients/GradOf-class.html)
+class, which in turn implements the
+[Gradient](https://pub.dev/documentation/eo_color/latest/gradients/Gradient-class.html)
+interface. Another example of a `Gradient` implementation is the abstract class
+`GradientImmut`, which retrieves immutable `List<Colors>` objects.
+
 
 For a complete list of gradients:
 
-- [gradient](https://pub.dev/documentation/eo_color/latest/gradients/gradients-library.html)
+- [gradients
+  library](https://pub.dev/documentation/eo_color/latest/gradients/gradients-library.html)
 
 ## Demo application
 
