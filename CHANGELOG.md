@@ -14,6 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `GradOf` constructors: `blue`, `blueAccent`; `lightBlue`, `lightBlueAccent`;
   `cyan`, `cyanAccent`.
 
+[Yellowish gradients](https://github.com/dartoos-dev/eo_color/issues/115):
+
+- `GradOf` constructors: `amber`, `amberAccent`; `yellow`, `yellowAccent`.
+
+### Changed
+
+- Improve README's readability and fix typos.
+
 ## [2.0.0] - 2021-10-20
 
 ### Added

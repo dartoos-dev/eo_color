@@ -61,4 +61,31 @@ class GradOf extends GradientSwatch {
   /// See also: [CyanAccents].
   const GradOf.cyanAccent({bool growable = false})
       : super(const CyanAccents(), growable: growable); // coverage:ignore-line
+
+  /// A gradient of ten shades of amber.
+  ///
+  /// See also: [ambers].
+  const GradOf.amber({bool growable = false})
+      : super(const Ambers(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of amber accent.
+  ///
+  /// See also: [amberAccents].
+  const GradOf.amberAccent({bool growable = false})
+      : super(const AmberAccents(), growable: growable); // coverage:ignore-line
+
+  /// A gradient of ten shades of yellow.
+  ///
+  /// See also: [yellows].
+  const GradOf.yellow({bool growable = false})
+      : super(const Yellows(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of yellow accent.
+  ///
+  /// See also: [yellowAccents].
+  const GradOf.yellowAccent({bool growable = false})
+      // coverage:ignore-start
+      : super(
+          const YellowAccents(),
+          growable: growable,
+        ); // coverage:ignore-line
+  // coverage:ignore-end
 }
