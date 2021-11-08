@@ -1,14 +1,4 @@
-import 'package:eo_color/src/material/blue/blue_accents.dart';
-import 'package:eo_color/src/material/blue/blues.dart';
-import 'package:eo_color/src/material/blue_grey/blue_greys.dart';
-import 'package:eo_color/src/material/brown/browns.dart';
-import 'package:eo_color/src/material/cyan/cyan_accents.dart';
-import 'package:eo_color/src/material/cyan/cyans.dart';
-import 'package:eo_color/src/material/grad_of.dart';
-import 'package:eo_color/src/material/grey/greys.dart';
-import 'package:eo_color/src/material/light_blue/light_blue_accents.dart';
-import 'package:eo_color/src/material/light_blue/light_blues.dart';
-import 'package:eo_color/src/material/transparent.dart';
+import 'package:eo_color/eo_color.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -145,6 +135,68 @@ void main() {
       });
       test('growable list', () {
         final growable = const GradOf.cyanAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+
+    group('amber:', () {
+      final amberGrad = const GradOf.amber().colors;
+      test('gradient', () {
+        expect(amberGrad, List.of(const Ambers().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => amberGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.amber(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('amber accent:', () {
+      final amberGrad = const GradOf.amberAccent().colors;
+      test('gradient', () {
+        expect(amberGrad, List.of(const AmberAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => amberGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.amberAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+
+    group('yellow:', () {
+      final yellowGrad = const GradOf.yellow().colors;
+      test('gradient', () {
+        expect(yellowGrad, List.of(const Yellows().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => yellowGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.yellow(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('yellow accent:', () {
+      final yellowGrad = const GradOf.yellowAccent().colors;
+      test('gradient', () {
+        expect(yellowGrad, List.of(const YellowAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => yellowGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.yellowAccent(growable: true).colors;
         final prevLength = growable.length;
         growable.add(aColor);
         expect(growable.length, prevLength + 1);
