@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+[Orangish gradients](https://github.com/dartoos-dev/eo_color/issues/121):
+
+- `GradOf` constructors: `orange`, `orangeAccent`; `deepOrange`,
+  `deepOrangeAccent`.
+
 ## [2.1.0] - 2021-11-08
 
 ### Added

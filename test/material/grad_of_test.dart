@@ -202,5 +202,65 @@ void main() {
         expect(growable.length, prevLength + 1);
       });
     });
+    group('orange:', () {
+      final orangeGrad = const GradOf.orange().colors;
+      test('gradient', () {
+        expect(orangeGrad, List.of(const Oranges().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => orangeGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.orange(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('orange accent:', () {
+      final orangeAccentGrad = const GradOf.orangeAccent().colors;
+      test('gradient', () {
+        expect(orangeAccentGrad, List.of(const OrangeAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => orangeAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.orangeAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('deep orange:', () {
+      final deepOrangeGrad = const GradOf.deepOrange().colors;
+      test('gradient', () {
+        expect(deepOrangeGrad, List.of(const DeepOranges().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => deepOrangeGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.deepOrange(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('deep orange accent:', () {
+      final deepOrangeAccentGrad = const GradOf.deepOrangeAccent().colors;
+      test('gradient', () {
+        expect(deepOrangeAccentGrad, List.of(const DeepOrangeAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => deepOrangeAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.deepOrangeAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
   });
 }

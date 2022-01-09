@@ -88,4 +88,36 @@ class GradOf extends GradientSwatch {
           growable: growable,
         ); // coverage:ignore-line
   // coverage:ignore-end
+
+  /// A gradient of ten shades of orange.
+  ///
+  /// See also: [oranges].
+  const GradOf.orange({bool growable = false})
+      : super(const Oranges(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of orange accent.
+  ///
+  /// See also: [OrangeAccents].
+  const GradOf.orangeAccent({bool growable = false})
+      // coverage:ignore-start
+      : super(
+          const OrangeAccents(),
+          growable: growable,
+        ); // coverage:ignore-line
+  // coverage:ignore-end
+
+  /// A gradient of ten shades of deep orange.
+  ///
+  /// See also: [DeepOranges].
+  const GradOf.deepOrange({bool growable = false})
+      : super(const DeepOranges(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of deep orange accent.
+  ///
+  /// See also: [DeepOrangeAccents].
+  const GradOf.deepOrangeAccent({bool growable = false})
+      // coverage:ignore-start
+      : super(
+          const DeepOrangeAccents(),
+          growable: growable,
+        ); // coverage:ignore-line
+  // coverage:ignore-end
 }
