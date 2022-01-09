@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `GradOf` constructors: `orange`, `orangeAccent`; `deepOrange`,
   `deepOrangeAccent`.
 
+[Purplish gradients](https://github.com/dartoos-dev/eo_color/issues/120):
+
+- `GradOf` constructors: `purple`, `purpleAccent`; `deepPurple`,
+  `deepPurpleAccent`.
+
 ## [2.1.0] - 2021-11-08
 
 ### Added
