@@ -472,5 +472,65 @@ void main() {
         expect(growable.length, prevLength + 1);
       });
     });
+    group('pink:', () {
+      final pinkGrad = const GradOf.pink().colors;
+      test('gradient', () {
+        expect(pinkGrad, List.of(const Pinks().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => pinkGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.pink(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('pink accent:', () {
+      final pinkAccentGrad = const GradOf.pinkAccent().colors;
+      test('gradient', () {
+        expect(pinkAccentGrad, List.of(const PinkAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => pinkAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.pinkAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('red:', () {
+      final redGrad = const GradOf.red().colors;
+      test('gradient', () {
+        expect(redGrad, List.of(const Reds().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => redGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.red(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('red accent:', () {
+      final redAccentGrad = const GradOf.redAccent().colors;
+      test('gradient', () {
+        expect(redAccentGrad, List.of(const RedAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => redAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.redAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
   });
 }

@@ -26,6 +26,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `GradOf` constructors: `indigo`, `indigoAccent`.
 
+[Reddish gradients](https://github.com/dartoos-dev/eo_color/issues/116):
+
+- `GradOf` constructors: `pink`, `pinkAccent`; `red`, `redGreenAccent`.
+
 ## [2.1.0] - 2021-11-08
 
 ### Added
