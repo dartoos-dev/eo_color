@@ -152,4 +152,68 @@ class GradOf extends GradientSwatch {
           growable: growable,
         ); // coverage:ignore-line
   // coverage:ignore-end
+
+  /// A gradient of ten shades of green.
+  ///
+  /// See also: [Greens].
+  const GradOf.green({bool growable = false})
+      : super(const Greens(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of green accent.
+  ///
+  /// See also: [GreenAccents].
+  const GradOf.greenAccent({bool growable = false})
+      // coverage:ignore-start
+      : super(
+          const GreenAccents(),
+          growable: growable,
+        ); // coverage:ignore-line
+  // coverage:ignore-end
+
+  /// A gradient of ten shades of lightGreen.
+  ///
+  /// See also: [LightGreens].
+  const GradOf.lightGreen({bool growable = false})
+      : super(const LightGreens(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of lightGreen accent.
+  ///
+  /// See also: [LightGreenAccents].
+  const GradOf.lightGreenAccent({bool growable = false})
+      // coverage:ignore-start
+      : super(
+          const LightGreenAccents(),
+          growable: growable,
+        ); // coverage:ignore-line
+  // coverage:ignore-end
+
+  /// A gradient of ten shades of lime.
+  ///
+  /// See also: [Limes].
+  const GradOf.lime({bool growable = false})
+      : super(const Limes(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of lime accent.
+  ///
+  /// See also: [LimeAccents].
+  const GradOf.limeAccent({bool growable = false})
+      // coverage:ignore-start
+      : super(
+          const LimeAccents(),
+          growable: growable,
+        ); // coverage:ignore-line
+  // coverage:ignore-end
+
+  /// A gradient of ten shades of teal.
+  ///
+  /// See also: [Teals].
+  const GradOf.teal({bool growable = false})
+      : super(const Teals(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of teal accent.
+  ///
+  /// See also: [TealAccents].
+  const GradOf.tealAccent({bool growable = false})
+      // coverage:ignore-start
+      : super(
+          const TealAccents(),
+          growable: growable,
+        ); // coverage:ignore-line
+  // coverage:ignore-end
 }

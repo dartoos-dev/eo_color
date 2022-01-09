@@ -17,6 +17,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `GradOf` constructors: `purple`, `purpleAccent`; `deepPurple`,
   `deepPurpleAccent`.
 
+[Greenish gradients](https://github.com/dartoos-dev/eo_color/issues/117):
+
+- `GradOf` constructors: `green`, `greenAccent`; `lightGreen`,
+  `lighGreenAccent`; `lime`, `limeAccent`; `teal`, `tealAccent`.
+
 ## [2.1.0] - 2021-11-08
 
 ### Added

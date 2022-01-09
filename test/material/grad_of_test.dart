@@ -262,7 +262,6 @@ void main() {
         expect(growable.length, prevLength + 1);
       });
     });
-
     group('purple:', () {
       final purpleGrad = const GradOf.purple().colors;
       test('gradient', () {
@@ -318,6 +317,126 @@ void main() {
       });
       test('growable list', () {
         final growable = const GradOf.deepPurpleAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('green:', () {
+      final greenGrad = const GradOf.green().colors;
+      test('gradient', () {
+        expect(greenGrad, List.of(const Greens().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => greenGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.green(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('green accent:', () {
+      final greenAccentGrad = const GradOf.greenAccent().colors;
+      test('gradient', () {
+        expect(greenAccentGrad, List.of(const GreenAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => greenAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.greenAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('lightgreen:', () {
+      final lightGreenGrad = const GradOf.lightGreen().colors;
+      test('gradient', () {
+        expect(lightGreenGrad, List.of(const LightGreens().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => lightGreenGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.lightGreen(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('lightgreen accent:', () {
+      final lightGreenAccentGrad = const GradOf.lightGreenAccent().colors;
+      test('gradient', () {
+        expect(lightGreenAccentGrad, List.of(const LightGreenAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => lightGreenAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.lightGreenAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('lime:', () {
+      final limeGrad = const GradOf.lime().colors;
+      test('gradient', () {
+        expect(limeGrad, List.of(const Limes().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => limeGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.lime(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('lime accent:', () {
+      final limeAccentGrad = const GradOf.limeAccent().colors;
+      test('gradient', () {
+        expect(limeAccentGrad, List.of(const LimeAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => limeAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.limeAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('teal:', () {
+      final tealGrad = const GradOf.teal().colors;
+      test('gradient', () {
+        expect(tealGrad, List.of(const Teals().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => tealGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.teal(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('teal accent:', () {
+      final tealAccentGrad = const GradOf.tealAccent().colors;
+      test('gradient', () {
+        expect(tealAccentGrad, List.of(const TealAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => tealAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.tealAccent(growable: true).colors;
         final prevLength = growable.length;
         growable.add(aColor);
         expect(growable.length, prevLength + 1);
