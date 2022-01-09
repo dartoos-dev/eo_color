@@ -120,4 +120,36 @@ class GradOf extends GradientSwatch {
           growable: growable,
         ); // coverage:ignore-line
   // coverage:ignore-end
+
+  /// A gradient of ten shades of purple.
+  ///
+  /// See also: [purples].
+  const GradOf.purple({bool growable = false})
+      : super(const Purples(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of purple accent.
+  ///
+  /// See also: [PurpleAccents].
+  const GradOf.purpleAccent({bool growable = false})
+      // coverage:ignore-start
+      : super(
+          const PurpleAccents(),
+          growable: growable,
+        ); // coverage:ignore-line
+  // coverage:ignore-end
+
+  /// A gradient of ten shades of deep purple.
+  ///
+  /// See also: [DeepPurples].
+  const GradOf.deepPurples({bool growable = false})
+      : super(const DeepPurples(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of deep purple accent.
+  ///
+  /// See also: [DeepPurpleAccents].
+  const GradOf.deepPurpleAccent({bool growable = false})
+      // coverage:ignore-start
+      : super(
+          const DeepPurpleAccents(),
+          growable: growable,
+        ); // coverage:ignore-line
+  // coverage:ignore-end
 }

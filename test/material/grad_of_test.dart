@@ -262,5 +262,66 @@ void main() {
         expect(growable.length, prevLength + 1);
       });
     });
+
+    group('purple:', () {
+      final purpleGrad = const GradOf.purple().colors;
+      test('gradient', () {
+        expect(purpleGrad, List.of(const Purples().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => purpleGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.purple(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('purple accent:', () {
+      final purpleAccentGrad = const GradOf.purpleAccent().colors;
+      test('gradient', () {
+        expect(purpleAccentGrad, List.of(const PurpleAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => purpleAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.purpleAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('deep purple:', () {
+      final deepPurpleGrad = const GradOf.deepPurples().colors;
+      test('gradient', () {
+        expect(deepPurpleGrad, List.of(const DeepPurples().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => deepPurpleGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.deepPurples(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('deep purple accent:', () {
+      final deepPurpleAccentGrad = const GradOf.deepPurpleAccent().colors;
+      test('gradient', () {
+        expect(deepPurpleAccentGrad, List.of(const DeepPurpleAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => deepPurpleAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.deepPurpleAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
   });
 }
