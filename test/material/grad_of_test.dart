@@ -322,6 +322,36 @@ void main() {
         expect(growable.length, prevLength + 1);
       });
     });
+    group('indigo:', () {
+      final indigoGrad = const GradOf.indigo().colors;
+      test('gradient', () {
+        expect(indigoGrad, List.of(const Indigos().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => indigoGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.indigo(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
+    group('indigo accent:', () {
+      final indigoAccentGrad = const GradOf.indigoAccent().colors;
+      test('gradient', () {
+        expect(indigoAccentGrad, List.of(const IndigoAccents().colors));
+      });
+      test('fixed-length list', () {
+        expect(() => indigoAccentGrad.add(aColor), throwsUnsupportedError);
+      });
+      test('growable list', () {
+        final growable = const GradOf.indigoAccent(growable: true).colors;
+        final prevLength = growable.length;
+        growable.add(aColor);
+        expect(growable.length, prevLength + 1);
+      });
+    });
     group('green:', () {
       final greenGrad = const GradOf.green().colors;
       test('gradient', () {

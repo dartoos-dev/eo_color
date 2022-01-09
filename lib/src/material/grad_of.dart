@@ -153,6 +153,21 @@ class GradOf extends GradientSwatch {
         ); // coverage:ignore-line
   // coverage:ignore-end
 
+  /// A gradient of ten shades of indigo.
+  ///
+  /// See also: [Indigos].
+  const GradOf.indigo({bool growable = false})
+      : super(const Indigos(), growable: growable); // coverage:ignore-line
+  /// A gradient of four shades of indigo accent.
+  ///
+  /// See also: [IndigoAccents].
+  const GradOf.indigoAccent({bool growable = false})
+      // coverage:ignore-start
+      : super(
+          const IndigoAccents(),
+          growable: growable,
+        ); // coverage:ignore-line
+  // coverage:ignore-end
   /// A gradient of ten shades of green.
   ///
   /// See also: [Greens].
