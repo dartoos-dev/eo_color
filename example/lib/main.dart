@@ -1,7 +1,6 @@
 import 'package:eo_color/eo_color.dart';
+import 'package:eo_color_example/contrast.dart';
 import 'package:flutter/material.dart';
-
-import 'contrast.dart';
 
 void main() {
   runApp(const ExampleApp());
@@ -70,16 +69,20 @@ class SwatchWidget extends StatelessWidget {
 
   /// Brown swatch.
   const SwatchWidget.browns({Key? key})
-      : this(const Browns(), const Contrast.forBrown(), "Brown", key: key);
+      : this(const Browns(), const Contrast.forBrown(), 'Brown', key: key);
 
   /// Blue-Grey swatch.
   const SwatchWidget.blueGreys({Key? key})
-      : this(const BlueGreys(), const Contrast.forBlueGrey(), "Blue-Grey",
-            key: key);
+      : this(
+          const BlueGreys(),
+          const Contrast.forBlueGrey(),
+          'Blue-Grey',
+          key: key,
+        );
 
   /// Grey swatch.
   const SwatchWidget.greys({Key? key})
-      : this(const Greys(), const Contrast.forGrey(), "Grey", key: key);
+      : this(const Greys(), const Contrast.forGrey(), 'Grey', key: key);
 
   final Swatch _swatch;
   // Text contrast colors.

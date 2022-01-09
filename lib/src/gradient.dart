@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'swatch.dart';
+import 'package:eo_color/swatches.dart';
 
 /// Represents a color gradient.
 ///

@@ -1,6 +1,5 @@
+import 'package:eo_color/palettes.dart';
 import 'package:eo_color/swatches.dart';
-
-import 'indigo_accent.dart';
 
 /// Material Design shades of indigo accent.
 ///

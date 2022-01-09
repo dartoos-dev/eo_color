@@ -1,6 +1,5 @@
+import 'package:eo_color/palettes.dart';
 import 'package:eo_color/swatches.dart';
-
-import 'deep_orange.dart';
 
 /// Material Design shades of deep orange.
 ///

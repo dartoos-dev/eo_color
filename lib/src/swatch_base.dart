@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'palette.dart';
-import 'swatch.dart';
+import 'package:eo_color/palettes.dart';
+import 'package:eo_color/swatches.dart';
 
 /// Base Swatch.
 abstract class SwatchBase implements Swatch {

@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'palette.dart';
+import 'package:eo_color/palettes.dart';
 
 /// A Palette Color from alpha, red, green and blue.
 ///

@@ -1,5 +1,5 @@
-import '../../swatches.dart';
-import '../gradient_swatch.dart';
+import 'package:eo_color/gradients.dart';
+import 'package:eo_color/swatches.dart';
 
 /// The gradient of the shades of a Material Design color.
 ///

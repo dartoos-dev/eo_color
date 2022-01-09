@@ -1,13 +1,13 @@
+import 'package:eo_color/palettes.dart';
 import 'package:eo_color/swatches.dart';
-
-import 'deep_purple_accent.dart';
 
 /// Material Design shades of deep purple accent.
 ///
 /// See also
 /// - [deep purple accent](https://api.flutter.dev/flutter/material/Colors/deepPurpleAccent-constant.html)
 class DeepPurpleAccents extends SwatchBase {
-  /// Four shades of deep purple accent; the higher the index, the darker the color.
+  /// Four shades of deep purple accent; the higher the index, the darker the
+  /// color.
   ///
   /// There are 4 valid indexes
   /// - 0, light ≡ 100

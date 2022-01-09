@@ -1,4 +1,4 @@
-import '../../../eo_color.dart';
+import 'package:eo_color/palettes.dart';
 
 /// Material Design light blue.
 ///

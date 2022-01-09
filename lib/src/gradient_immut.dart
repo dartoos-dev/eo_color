@@ -1,9 +1,7 @@
 import 'dart:ui';
 
-import 'package:eo_color/src/palette.dart';
-
-import 'gradient.dart';
-import 'swatch_base.dart';
+import 'package:eo_color/palettes.dart';
+import 'package:eo_color/swatches.dart';
 
 /// Convenience [Gradient] that retrieves immutable lists of colors.
 abstract class GradientImmut extends SwatchBase implements Gradient {

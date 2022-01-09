@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'gradient.dart';
-import 'swatch.dart';
+import 'package:eo_color/gradients.dart';
+import 'package:eo_color/swatches.dart';
 
 /// A [Gradient] from a [Swatch] instance.
 abstract class GradientSwatch implements Gradient {

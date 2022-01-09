@@ -1,6 +1,5 @@
+import 'package:eo_color/palettes.dart';
 import 'package:eo_color/swatches.dart';
-
-import 'light_blue_accent.dart';
 
 /// Material Design shades of light blue accent.
 ///
@@ -13,7 +12,8 @@ import 'light_blue_accent.dart';
 /// See also
 /// - [light blue accent](https://api.flutter.dev/flutter/material/Colors/lightBlueAccent-constant.html)
 class LightBlueAccents extends SwatchBase {
-  /// Four shades of light blue accent; the higher the index, the darker the color.
+  /// Four shades of light blue accent; the higher the index, the darker the
+  /// color.
   ///
   /// There are 4 valid indexes
   /// - 0, light ≡ 100

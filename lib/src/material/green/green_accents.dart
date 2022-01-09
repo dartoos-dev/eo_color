@@ -1,6 +1,5 @@
+import 'package:eo_color/palettes.dart';
 import 'package:eo_color/swatches.dart';
-
-import 'green_accent.dart';
 
 /// Material Design shades of green accent.
 ///
