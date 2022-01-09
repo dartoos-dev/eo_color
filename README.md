@@ -25,12 +25,13 @@ alt="EO-Color logo" width="112" height="96"/>
 - [Swatch in action](#swatch-in-action)
 - [Gradient interface](#gradient-interface)
 - [Demo application](#demo-application)
+- [Contribute](#contribute)
 - [References](#references)
 
 ## Overview
 
 **EO-Color** is an **E**legant, **O**bject-oriented implementation of the
-Material Design color palettes and swatches, as well as a color framework.
+Material Design color palettes and swatches — as well as a color framework!
 
 It is intended to be used as:
 
@@ -45,8 +46,8 @@ shade of a color has been replaced by a more user-friendly approach: the use of
 **adverbs** (ultra, very, bit, etc.) and **adjectives** (light, dark, etc.).
 
 For example, to get the primary shade of grey, simply **declare** `Grey()`.
-Likewise, there are commands for retrieving shades of grey that are lighter
-or darker than the primary shade.
+Likewise, there are commands for retrieving shades of grey that are either
+lighter or darker than the primary shade.
 
 - **lighter shades**: `Grey.bitLighter()`, `Grey.lighter()`, `Grey.light()`,
   `Grey.veryLight()`, or `Grey.ultraLight()` for the lightest shade of grey.
@@ -204,7 +205,7 @@ interface retrieves an `iterable<Colors>` object, subclasses of
 [Gradient](https://pub.dev/documentation/eo_color/latest/gradients/Gradient-class.html)
 retrieves a `List<Colors>`, which makes them better suited for dealing with
 Flutter's gradient APIs — these APIs almost always expects a `List<Color>`
-object as argument rather than an `Iterable<Color>` object.
+object as the parameter rather than an `Iterable<Color>` object.
 
 For Material Design color gradients, use the
 [GradOf](https://pub.dev/documentation/eo_color/latest/gradients/GradOf-class.html)
@@ -236,6 +237,22 @@ flutter run -d chrome
 This should launch the demo application on Chrome in debug mode.
 
 ![Demo-App](https://user-images.githubusercontent.com/24878574/122656689-440a6000-d133-11eb-9100-46d6ff344283.png)
+
+## Contribute
+
+Contributors are welcome!
+
+1. Open an issue regarding an improvement, a bug you noticed, or ask to be
+   assigned to an existing one.
+2. If the issue is confirmed, fork the repository, do the changes on a separate
+   branch and make a _Pull Request_.
+3. After review and acceptance, the _Pull Request_ is merged and closed.
+
+Make sure the commands below **passes** before making a Pull Request.
+
+```shell
+  flutter analyze && flutter test
+```
 
 ## References
 
