@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.2.1] - 2023-02-05
+
 ### Changed
 
 - lint package update to version 2.0.1 — stricter linting rules.
