@@ -14,7 +14,7 @@ void main() {
       expect(colors.last, const TestPalette.white().color);
     }
 
-    const _blackAndWhite = TestSwatch.blackWhite();
-    test('colors property', () => check(_blackAndWhite.colors));
+    const blackAndWhite = TestSwatch.blackWhite();
+    test('colors property', () => check(blackAndWhite.colors));
   });
 }
