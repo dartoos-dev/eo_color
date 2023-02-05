@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- lint package update to version 2.0.1 — stricter linting rules.
+
+### Fixed
+
+[duplicate export](https://github.com/dartoos-dev/eo_color/issues/135)
+
+
 ## [2.2.0] - 2022-01-09
 
 ### Added
