@@ -11,7 +11,6 @@ export 'src/material/blue/blue.dart';
 export 'src/material/blue/blue_accent.dart';
 export 'src/material/blue_grey/blue_grey.dart';
 export 'src/material/brown/brown.dart';
-export 'src/material/brown/brown.dart';
 export 'src/material/cyan/cyan.dart';
 export 'src/material/cyan/cyan_accent.dart';
 export 'src/material/deep_orange/deep_orange.dart';
