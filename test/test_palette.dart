@@ -2,8 +2,7 @@ import 'package:eo_color/palettes.dart';
 
 /// Testing purposes Palette subclass.
 class TestPalette extends PaletteRGB {
-  const TestPalette({required int alpha, required int rgb})
-      : super(alpha: alpha, rgb: rgb);
+  const TestPalette({required super.alpha, required super.rgb});
   const TestPalette.red() : super.opaque(0xFF0000);
   const TestPalette.blue() : super.opaque(0x0000FF);
   const TestPalette.green() : super.opaque(0x00FF00);

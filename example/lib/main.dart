@@ -9,7 +9,7 @@ void main() {
 /// Root widget.
 class ExampleApp extends StatelessWidget {
   /// Ctor.
-  const ExampleApp({Key? key}) : super(key: key);
+  const ExampleApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +24,7 @@ class ExampleApp extends StatelessWidget {
 /// Showcase widget of color swatches.
 class Showcase extends StatelessWidget {
   /// Ctor.
-  const Showcase({required String title, Key? key})
-      : _title = title,
-        super(key: key);
+  const Showcase({required String title, super.key}) : _title = title;
 
   final String _title;
 
@@ -61,11 +59,14 @@ class Showcase extends StatelessWidget {
 
 /// Color swatch widget that mimics the Material Design color showcase.
 class SwatchWidget extends StatelessWidget {
-  const SwatchWidget(Swatch swatch, Contrast contrast, String title, {Key? key})
-      : _swatch = swatch,
+  const SwatchWidget(
+    Swatch swatch,
+    Contrast contrast,
+    String title, {
+    super.key,
+  })  : _swatch = swatch,
         _contrast = contrast,
-        _title = '$title 50',
-        super(key: key);
+        _title = '$title 50';
 
   /// Brown swatch.
   const SwatchWidget.browns({Key? key})
@@ -122,11 +123,10 @@ class ColorTile extends StatelessWidget {
     required Color bgColor,
     required Color fontColor,
     required String label,
-    Key? key,
+    super.key,
   })  : _bgColor = bgColor,
         _fontColor = fontColor,
-        _label = label,
-        super(key: key);
+        _label = label;
 
   final Color _bgColor;
   final Color _fontColor;
