@@ -4,7 +4,7 @@ import 'dart:ui';
 ///
 /// A group of related colors such as the colors of the rainbow, shades of grey,
 /// etc.
-abstract class Swatch {
+abstract interface class Swatch {
   /// const ctor.
   const Swatch(); // coverage:ignore-line
 

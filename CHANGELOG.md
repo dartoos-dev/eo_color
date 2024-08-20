@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- sdk = ^3.0.5.
+- lint package update to version 2.3.0 — stricter linting rules.
 - update Github actions and Rultor scripts.
 
 ## [2.2.1] - 2023-02-05
