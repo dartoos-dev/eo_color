@@ -44,11 +44,11 @@ class Showcase extends StatelessWidget {
           style: TextStyle(color: _barText.color, fontWeight: FontWeight.bold),
         ),
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
+      body: const SingleChildScrollView(
+        padding: EdgeInsets.all(16),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: const [
+          children: [
             SwatchWidget.blueGreys(),
             SwatchWidget.greys(),
             SwatchWidget.browns(),
@@ -95,7 +95,7 @@ class SwatchWidget extends StatelessWidget {
     final textFont = _contrast.colors.toList(growable: false);
     final labels = [
       _title,
-      ...const ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+      ...const ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
     ];
     return SizedBox(
       width: 250,

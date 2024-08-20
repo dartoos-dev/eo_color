@@ -48,7 +48,7 @@ class Primaries extends SwatchBase {
             Orange(),
             DeepOrange(),
             Brown(),
-            BlueGrey()
+            BlueGrey(),
           ],
         );
   // coverage:ignore-end
