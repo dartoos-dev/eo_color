@@ -6,9 +6,7 @@ void main() {
   runApp(const ExampleApp());
 }
 
-/// Root widget.
 class ExampleApp extends StatelessWidget {
-  /// Ctor.
   const ExampleApp({super.key});
 
   @override
@@ -23,34 +21,34 @@ class ExampleApp extends StatelessWidget {
 
 /// Showcase widget of color swatches.
 class Showcase extends StatelessWidget {
-  /// Ctor.
-  const Showcase({required String title, super.key}) : _title = title;
+  const Showcase({required this.title});
 
-  final String _title;
+  final String title;
 
-  static const _barBg = Grey.veryLight();
-  static const _barText = Grey.dark();
+  static const barBg = Grey.veryLight();
+  static const barText = Grey.dark();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: _barBg.color,
+        backgroundColor: barBg.color,
         title: Text(
-          _title,
-          style: TextStyle(color: _barText.color, fontWeight: FontWeight.bold),
+          title,
+          style: TextStyle(color: barText.color, fontWeight: FontWeight.bold),
         ),
       ),
       body: const SingleChildScrollView(
         padding: EdgeInsets.all(16),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            SwatchWidget.blueGreys(),
-            SwatchWidget.greys(),
-            SwatchWidget.browns(),
-          ],
+        child: Center(
+          child: Wrap(
+            children: [
+              SwatchWidget.blueGreys(),
+              SwatchWidget.greys(),
+              SwatchWidget.browns(),
+            ],
+          ),
         ),
       ),
     );
@@ -60,13 +58,11 @@ class Showcase extends StatelessWidget {
 /// Color swatch widget that mimics the Material Design color showcase.
 class SwatchWidget extends StatelessWidget {
   const SwatchWidget(
-    Swatch swatch,
-    Contrast contrast,
+    this.swatch,
+    this.contrast,
     String title, {
     super.key,
-  })  : _swatch = swatch,
-        _contrast = contrast,
-        _title = '$title 50';
+  }) : title = '$title 50';
 
   /// Brown swatch.
   const SwatchWidget.browns({Key? key})
@@ -85,17 +81,17 @@ class SwatchWidget extends StatelessWidget {
   const SwatchWidget.greys({Key? key})
       : this(const Greys(), const Contrast.forGrey(), 'Grey', key: key);
 
-  final Swatch _swatch;
+  final Swatch swatch;
   // Text contrast colors.
-  final Contrast _contrast;
-  final String _title;
+  final Contrast contrast;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
-    final colors = _swatch.colors.toList(growable: false);
-    final textFont = _contrast.colors.toList(growable: false);
+    final colors = swatch.colors.toList(growable: false);
+    final textFont = contrast.colors.toList(growable: false);
     final labels = [
-      _title,
+      title,
       ...const ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
     ];
     return SizedBox(
@@ -120,26 +116,24 @@ class SwatchWidget extends StatelessWidget {
 
 class ColorTile extends StatelessWidget {
   const ColorTile({
-    required Color bgColor,
-    required Color fontColor,
-    required String label,
+    required this.bgColor,
+    required this.fontColor,
+    required this.label,
     super.key,
-  })  : _bgColor = bgColor,
-        _fontColor = fontColor,
-        _label = label;
+  });
 
-  final Color _bgColor;
-  final Color _fontColor;
-  final String _label;
+  final Color bgColor;
+  final Color fontColor;
+  final String label;
 
   @override
   Widget build(BuildContext context) {
-    final style = TextStyle(color: _fontColor, fontWeight: FontWeight.w500);
+    final style = TextStyle(color: fontColor, fontWeight: FontWeight.w500);
     return ListTile(
-      tileColor: _bgColor,
-      leading: Text(_label, style: style),
+      tileColor: bgColor,
+      leading: Text(label, style: style),
       trailing: Text(
-        '#${_bgColor.value.toRadixString(16).substring(2).toUpperCase()}',
+        '#${bgColor.value.toRadixString(16).substring(2).toUpperCase()}',
         style: style,
       ),
     );
