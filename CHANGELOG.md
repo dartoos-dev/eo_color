@@ -5,10 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [2.2.3] - 2024-08-26
+
+### Changed
 
 - Get the example application to run on multiple platforms — Android, IOS,
   MacOs and Web —  [144](https://github.com/dartoos-dev/eo_color/issues/144).
+- Update auto-generated files by running `flutter create -t package .`.
 
 ## [2.2.2] - 2024-08-20
 
