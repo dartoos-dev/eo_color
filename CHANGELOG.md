@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Get the example application to run on multiple platforms — Android, IOS,
+  MacOs and Web —  [144](https://github.com/dartoos-dev/eo_color/issues/144).
+
 ## [2.2.2] - 2024-08-20
 
 ### Changed
